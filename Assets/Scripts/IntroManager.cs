@@ -19,6 +19,11 @@ public class IntroManager : MonoBehaviour
         fogManager.OnFogFadeIn += StartSequence;                        // Start sequence of texts right after fog goes in
     }
 
+    private void OnDisable()
+    {
+        fogManager.OnFogFadeIn -= StartSequence;
+    }
+
     private void Start()
     {
         _typeWriter = TypeWriter.Instance;

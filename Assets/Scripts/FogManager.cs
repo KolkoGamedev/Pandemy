@@ -26,7 +26,7 @@ public class FogManager : MonoBehaviour
         StartCoroutine(FadeIn());
     }
 
-    private IEnumerator FadeIn()
+    public IEnumerator FadeIn()
     {
         float expectedTime = 3f;
         float elapsedTime = 0f;
@@ -38,5 +38,18 @@ public class FogManager : MonoBehaviour
             yield return null;
         }
         OnFogFadeIn?.Invoke();
+    }
+    public IEnumerator FadeOut(Action<bool> callback)
+    {
+        float expectedTime = 3f;
+        float elapsedTime = 0f;
+        
+        while (elapsedTime < expectedTime)
+        {
+            elapsedTime += Time.deltaTime;
+            _fogMaterial.SetFloat("_FogAlpha", 1 - (elapsedTime /expectedTime));
+            yield return null;
+        }
+        callback(true);
     }
 }

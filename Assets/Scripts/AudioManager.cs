@@ -10,12 +10,13 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip menuSoundtrack = null;
     [SerializeField] private FogManager fogManager = null;
     [SerializeField] private List<AudioClip> listOfTypingSounds = null;
-    [SerializeField] private AudioSource typewriterSource = null;
+    //[SerializeField] private AudioSource typewriterSource = null;
     private AudioSource _as;
 
     private void Awake()
     {
         _as = GetComponent<AudioSource>();
+        DontDestroyOnLoad(this.gameObject);
     }
     private void OnEnable()
     {
@@ -35,6 +36,6 @@ public class AudioManager : MonoBehaviour
 
     private void PlayTypingSound()
     {
-        typewriterSource.PlayOneShot(listOfTypingSounds[Random.Range(0, listOfTypingSounds.Count)]);
+        _as.PlayOneShot(listOfTypingSounds[Random.Range(0, listOfTypingSounds.Count)]);
     }
 }

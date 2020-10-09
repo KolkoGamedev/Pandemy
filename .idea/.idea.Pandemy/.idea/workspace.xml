@@ -3,9 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="cab1a42a-8276-4325-a83b-c3e26dfca05a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pandemy/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pandemy/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pandemy/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pandemy/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pandemy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pandemy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FogManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FogManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/IntroManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IntroManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TypeWriter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TypeWriter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,16 +24,20 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FogManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IntroManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TypeWriter.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/FogManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TypeWriter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Float2DObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MenuButtons.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TypeWriter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IntroManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FogManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
       </list>
     </option>
   </component>
@@ -73,7 +82,8 @@
       <workItem from="1602092195410" duration="2000" />
       <workItem from="1602101586016" duration="7267000" />
       <workItem from="1602181916495" duration="4391000" />
-      <workItem from="1602248117822" duration="1710000" />
+      <workItem from="1602248117822" duration="1876000" />
+      <workItem from="1602266889152" duration="4345000" />
     </task>
     <servers />
   </component>

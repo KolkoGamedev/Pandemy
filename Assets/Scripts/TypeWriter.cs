@@ -22,6 +22,7 @@ public class TypeWriter : MonoBehaviour
         if (!Instance)
         {
             Instance = this;
+            DontDestroyOnLoad(this.gameObject);
         }
         else
         {
