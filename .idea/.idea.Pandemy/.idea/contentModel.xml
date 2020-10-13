@@ -8,7 +8,9 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="AudioManager.cs" t="Include" />
+          <e p="DialogSystem.cs" t="Include" />
           <e p="FogManager.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
           <e p="IntroManager.cs" t="Include" />
           <e p="LevelManager.cs" t="Include" />
           <e p="TypeWriter.cs" t="Include" />
