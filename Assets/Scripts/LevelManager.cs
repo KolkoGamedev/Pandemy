@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance;
-    [SerializeField] private List<GameObject> texts;            // Textfields to hide before level swap
+    [SerializeField] private List<GameObject> texts = null;            // Textfields to hide before level swap
     private FogManager _fm;
     private void Awake()
     {
