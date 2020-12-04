@@ -7,21 +7,24 @@ using UnityEngine;
 
 public class IntroManager : MonoBehaviour
 {
+    
     [SerializeField] private FogManager fogManager = null;
     [SerializeField] private TMP_Text welcomeText = null;
     [SerializeField] private List<Sentence> introDialogue = null;        // List of texts
     [SerializeField] private TMP_Text gameTitleText = null;
     [SerializeField] private GameObject menuHolder = null;
+    [SerializeField] private float writeSpeed = .1f;
     private TypeWriter _typeWriter;
-    
+    private bool _isSkipped;
     private void Awake()
     {
-        fogManager.OnFogFadeIn += StartSequence;                        // Start sequence of texts right after fog goes in
+        fogManager.OnFogFadeIn += StartSequence;
     }
 
     private void OnDisable()
     {
         fogManager.OnFogFadeIn -= StartSequence;
+        
     }
 
     private void Start()
@@ -34,12 +37,24 @@ public class IntroManager : MonoBehaviour
         StartCoroutine(Sequence());
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SkipIntro();
+        }
+        
+    }
+
     private IEnumerator Sequence()                                     // Coroutine that shows every text line with delay from inspector
     {
         for (int i = 0; i < introDialogue.Count; i++)
         {
-            yield return new WaitUntil(() => _typeWriter.canWrite);
-            _typeWriter.TypewriteSentence(introDialogue[i].text, welcomeText, introDialogue[i].delay);
+            if (_isSkipped)
+                break;
+                
+            yield return new WaitUntil(() => _typeWriter.canWrite || _isSkipped);
+            _typeWriter.TypewriteSentence(introDialogue[i].text, welcomeText, introDialogue[i].delay, writeSpeed);
         }
         yield return new WaitForSeconds(3);                            // Wait 3 seconds after last text to fade out
         StartCoroutine(FadeOutText());
@@ -71,12 +86,25 @@ public class IntroManager : MonoBehaviour
             text.color = new Color(textColor.r, textColor.b, textColor.b, elapsedTime);
             yield return null;
         }
-        yield return new WaitForSeconds(4f);
-        menuHolder.gameObject.SetActive(true);
+
+        if (!_isSkipped)
+        {
+            yield return new WaitForSeconds(4f);
+            menuHolder.gameObject.SetActive(true);
+        }
+        else
+            menuHolder.gameObject.SetActive(true);
     }
 
     private void ShowMenu()
     {
         StartCoroutine(FadeInText(gameTitleText));
+    }
+
+    private void SkipIntro()
+    {
+        _isSkipped = true;
+        StopAllCoroutines();
+        StartCoroutine(FadeOutText());
     }
 }

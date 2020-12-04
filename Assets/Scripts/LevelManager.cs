@@ -8,8 +8,11 @@ using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
+    public static event Action GameStarted = delegate {  };
     public static LevelManager Instance;
-    [SerializeField] private List<GameObject> texts = null;            // Textfields to hide before level swap
+    
+    [SerializeField] private GameObject menuMap = null;        
+    [SerializeField] private GameObject gameMap = null;         
     private FogManager _fm;
     private void Awake()
     {
@@ -29,20 +32,17 @@ public class LevelManager : MonoBehaviour
         _fm = FindObjectOfType<FogManager>();
     }
 
-    public void HideTextsAndStartLevel(string sceneName)
+    public void SwapMap()
     {
-        for(int i = 0; i < texts.Count; i++)
-            texts[i].SetActive(false);
-
+        menuMap.SetActive(false);
+        gameMap.SetActive(true);
+        GameStarted?.Invoke();
+        /*
         StartCoroutine(_fm.FadeOut(callback =>
         {
             if(callback.Equals(true))
                 LoadLevel(sceneName);
         }));
-    }
-    
-    public void LoadLevel(string scene)
-    {
-        SceneManager.LoadScene(scene);
+        */
     }
 }

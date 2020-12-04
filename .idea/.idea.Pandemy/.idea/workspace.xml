@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cab1a42a-8276-4325-a83b-c3e26dfca05a" name="Default Changelist" comment="" />
+    <list default="true" id="cab1a42a-8276-4325-a83b-c3e26dfca05a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pandemy/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pandemy/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pandemy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pandemy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IntroManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IntroManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TypeWriter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TypeWriter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +22,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FogManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PostWrittenEvents.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IntroManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Game.unity" root0="FORCE_HIGHLIGHTING" />
@@ -27,12 +37,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Float2DObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MenuButtons.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TypeWriter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/IntroManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FogManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DialogSystem1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IntroManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DialogSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TypeWriter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PostWrittenEvents.cs" />
       </list>
     </option>
   </component>
@@ -43,6 +55,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.SolutionExplorerActivator" value="true" />
@@ -81,6 +94,9 @@
       <workItem from="1602266889152" duration="4345000" />
       <workItem from="1602615310635" duration="874000" />
       <workItem from="1603190177531" duration="468000" />
+      <workItem from="1605719051103" duration="775000" />
+      <workItem from="1605798017231" duration="12129000" />
+      <workItem from="1607090564683" duration="10640000" />
     </task>
     <servers />
   </component>
