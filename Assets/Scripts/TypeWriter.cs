@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UIElements;
 
 [Serializable]
@@ -17,6 +18,7 @@ public class TypeWriter : MonoBehaviour
     public static event Action OnLetterWritten = delegate {  };
     //public static event Action<TMP_Text> OnSceneFinishedWritting = delegate {  };
     public static TypeWriter Instance;
+    [SerializeField] private TMP_Text dialogTextField = null;
     public bool canWrite = true;
     public float pauseTimeAtDot = 3f;
     public float longPause = 3f;
@@ -34,15 +36,15 @@ public class TypeWriter : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        DialogSystem.OnDialogSkipped += DialogSystemOnOnDialogSkipped;
+        DialogSystem.OnDialogSkipped += DialogSystemOnDialogSkipped;
     }
 
-    private void DialogSystemOnOnDialogSkipped(DialogScene dialogScene)
+    private void DialogSystemOnDialogSkipped(DialogScene dialogScene)
     {
         if (!dialogScene.wasSkipped)
         {
             StopAllCoroutines();
-            
+            PostWrittenEvents.Instance.StopAllCoroutines();
             if (dialogScene.textAuthor == "")
             {
                 dialogScene.text = dialogScene.text.Replace('^', ' ');
@@ -53,93 +55,104 @@ public class TypeWriter : MonoBehaviour
                 goalSentence = goalSentence.Replace('^', ' ');
                 string completedSentence = goalSentence.Substring(currentSentence.Length, goalSentence.Length-currentSentence.Length);
                 dialogScene.currentTextField.text += completedSentence;
+                dialogScene.currentTextField.text += dialogScene.msgAfterScene;
             }
+            dialogScene.OnSceneFinished?.Invoke();
             dialogScene.wasSkipped = true;
             canWrite = true;
         }
     }
 
-    public void TypewriteSentence(string sentence, TMP_Text textField, float delay)
+    public void TypewriteSentence(DialogScene currentScene)
     {
-        StartCoroutine(Typewrite(sentence, textField, delay));
+        StartCoroutine(Typewrite(currentScene));
     }
-    public void TypewriteSentence(string sentence, string author, TMP_Text textField, float delay)
+    public void TypewriteSentence(DialogScene currentScene, string author)
     {
-        StartCoroutine(Typewrite(sentence, author, textField, delay));
+        StartCoroutine(Typewrite(currentScene, author));
     }
-    public void TypewriteSentence(string sentence, TMP_Text textField, float delay, float writeSpeed)
+    public void TypewriteSentence(DialogScene currentScene, float writeSpeed)
     {
-        StartCoroutine(Typewrite(sentence, textField, delay, writeSpeed));
+        StartCoroutine(Typewrite(currentScene, writeSpeed));
         
     }
     // Narrator
-    private IEnumerator Typewrite(string sentence, TMP_Text textField, float delay)
+    private IEnumerator Typewrite(DialogScene currentScene)
     {
         string currentWord = "";
         int index = 0;
         
-        while (currentWord.Length < sentence.Length)
+        while (currentWord.Length < currentScene.text.Length)
         {
             canWrite = false;
-            if(sentence[index] != '^')
-                currentWord += sentence[index];
+            
+            if (currentScene.overrideDialog)
+                dialogTextField.text = "";
+
+            if(currentScene.text[index] != '^')
+                currentWord += currentScene.text[index];
             else
             {
                 currentWord += ' ';
                 yield return new WaitForSeconds(longPause);
             }
-            textField.text = currentWord;
+            currentScene.currentTextField.text = currentWord;
             OnLetterWritten?.Invoke();
             
-            if (index > 1 && sentence[index] == ' ' && sentence[index-1] == '.')
+            if (index > 1 && currentScene.text[index] == ' ' && currentScene.text[index-1] == '.')
                 yield return new WaitForSeconds(writeSpeed * pauseTimeAtDot);
             else
                 yield return new WaitForSeconds(writeSpeed);
             index++;
         }
-        yield return new WaitForSeconds(delay);
+        yield return new WaitForSeconds(currentScene.afterTextDelay);
         canWrite = true;
-        OnSceneFinishedWritting?.Invoke(textField);
+        currentScene.OnSceneFinished?.Invoke();
     }
     //Intro
-    private IEnumerator Typewrite(string sentence, TMP_Text textField, float delay, float writeSpeed)
+    private IEnumerator Typewrite(DialogScene currentScene, float writeSpeed)
     {
         string currentWord = "";
         int index = 0;
         
-        while (currentWord.Length < sentence.Length)
+        while (currentWord.Length < currentScene.text.Length)
         {
             canWrite = false;
-            currentWord += sentence[index];
-            textField.text = currentWord;
+            currentWord += currentScene.text[index];
+            currentScene.currentTextField.text = currentWord;
             OnLetterWritten?.Invoke();
             
-            if (index > 1 && sentence[index] == ' ' && sentence[index-1] == '.')
+            if (index > 1 && currentScene.text[index] == ' ' && currentScene.text[index-1] == '.')
                 yield return new WaitForSeconds(writeSpeed * pauseTimeAtDot);
             else
                 yield return new WaitForSeconds(writeSpeed);
             index++;
         }
-        yield return new WaitForSeconds(delay);
+        yield return new WaitForSeconds(currentScene.afterTextDelay);
         canWrite = true;
     }
     //Dialogi
-    private IEnumerator Typewrite(string sentence,string author, TMP_Text textField, float delay)
+    private IEnumerator Typewrite(DialogScene currentScene, string author)
     {
         char sign = ' ';
         int index = 0;
-        goalSentence = sentence;
+        goalSentence = currentScene.text;
         currentSentence = "";
+
+        if (currentScene.overrideDialog)
+            currentScene.currentTextField.text = "";
         
-        textField.text += "<br><br>"+author+"<br><br>";
-        while (currentSentence.Length < sentence.Length)
+        if(author[0] != '0')
+            currentScene.currentTextField.text += "<br><br>"+author+"<br><br>";
+        
+        while (currentSentence.Length < currentScene.text.Length)
         {
             canWrite = false;
 
-            if (sentence[index] != '^')
+            if (currentScene.text[index] != '^')
             {
-                currentSentence += sentence[index];
-                sign = sentence[index];
+                currentSentence += currentScene.text[index];
+                sign = currentScene.text[index];
             }
             else
             {
@@ -147,17 +160,19 @@ public class TypeWriter : MonoBehaviour
                 sign = ' ';
                 yield return new WaitForSeconds(longPause);
             }
-            textField.text += sign;
+            currentScene.currentTextField.text += sign;
             OnLetterWritten?.Invoke();
             
-            if (index > 1 && sentence[index] == ' ' && sentence[index-1] == '.')
+            if (index > 1 && currentScene.text[index] == ' ' && currentScene.text[index-1] == '.')
                 yield return new WaitForSeconds(writeSpeed * pauseTimeAtDot);
             else
                 yield return new WaitForSeconds(writeSpeed);
             index++;
         }
-        yield return new WaitForSeconds(delay);
+
+        currentScene.currentTextField.text += "<br><br>"+currentScene.msgAfterScene+"<br>";
+        yield return new WaitForSeconds(currentScene.afterTextDelay);
         canWrite = true;
-        OnSceneFinishedWritting?.Invoke(textField);
+       
     }
 }

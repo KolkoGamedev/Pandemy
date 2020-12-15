@@ -730,6 +730,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 253779759}
   m_CullTransparentMesh: 0
+--- !u!114 &286181337 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 799030922203834014, guid: a4b18e0cd27b55040b00d5b2520c6ee1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1315333091}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20aac5a5fbf78954896ad7f02c9cccf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &457632036
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,7 +869,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 1.25
+  m_padding: 0
   m_canvasRenderer: {fileID: 479365675}
   m_TextComponent: {fileID: 1187839866}
   m_materialReferenceIndex: 1
@@ -1074,6 +1086,7 @@ GameObject:
   - component: {fileID: 589773829}
   - component: {fileID: 589773831}
   - component: {fileID: 589773830}
+  - component: {fileID: 589773832}
   m_Layer: 5
   m_Name: Text (TMP) (2)
   m_TagString: Untagged
@@ -1121,7 +1134,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Wybor C
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 49fcac74d91fc4446aa891dcd0f13e9c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0bbdd710fd12f764a9fc972f1b954490, type: 2}
   m_sharedMaterial: {fileID: 8842533363981715118, guid: 49fcac74d91fc4446aa891dcd0f13e9c,
     type: 2}
   m_fontSharedMaterials: []
@@ -1148,14 +1161,14 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 34.01
-  m_fontSizeBase: 34.01
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_textAlignment: 257
+  m_fontStyle: 1
+  m_textAlignment: 514
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -1200,7 +1213,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -1220,6 +1233,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 589773828}
   m_CullTransparentMesh: 0
+--- !u!114 &589773832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589773828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 589773830}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &605140499
 GameObject:
   m_ObjectHideFlags: 0
@@ -1231,6 +1287,7 @@ GameObject:
   - component: {fileID: 605140500}
   - component: {fileID: 605140502}
   - component: {fileID: 605140501}
+  - component: {fileID: 605140503}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1278,7 +1335,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Wybor A
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 49fcac74d91fc4446aa891dcd0f13e9c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0bbdd710fd12f764a9fc972f1b954490, type: 2}
   m_sharedMaterial: {fileID: 8842533363981715118, guid: 49fcac74d91fc4446aa891dcd0f13e9c,
     type: 2}
   m_fontSharedMaterials: []
@@ -1305,14 +1362,14 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 34.01
-  m_fontSizeBase: 34.01
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_textAlignment: 257
+  m_fontStyle: 1
+  m_textAlignment: 514
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -1357,7 +1414,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -1377,6 +1434,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605140499}
   m_CullTransparentMesh: 0
+--- !u!114 &605140503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605140499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 605140501}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &662530148
 GameObject:
   m_ObjectHideFlags: 0
@@ -1613,7 +1713,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 52, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &904258821
@@ -1780,6 +1880,7 @@ GameObject:
   - component: {fileID: 953791084}
   - component: {fileID: 953791086}
   - component: {fileID: 953791085}
+  - component: {fileID: 953791087}
   m_Layer: 5
   m_Name: Text (TMP) (1)
   m_TagString: Untagged
@@ -1827,7 +1928,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Wybor B
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 49fcac74d91fc4446aa891dcd0f13e9c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0bbdd710fd12f764a9fc972f1b954490, type: 2}
   m_sharedMaterial: {fileID: 8842533363981715118, guid: 49fcac74d91fc4446aa891dcd0f13e9c,
     type: 2}
   m_fontSharedMaterials: []
@@ -1854,14 +1955,14 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 34.01
-  m_fontSizeBase: 34.01
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_textAlignment: 257
+  m_fontStyle: 1
+  m_textAlignment: 514
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -1906,7 +2007,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -1926,6 +2027,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 953791083}
   m_CullTransparentMesh: 0
+--- !u!114 &953791087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953791083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 953791085}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &958624107 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7082565186622769388, guid: 8e8a70bee906bfd4f918da280971bb94,
@@ -2057,7 +2201,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0bbdd710fd12f764a9fc972f1b954490, type: 2}
-  m_sharedMaterial: {fileID: 8842533363981715118, guid: 49fcac74d91fc4446aa891dcd0f13e9c,
+  m_sharedMaterial: {fileID: -6402352393105694696, guid: 0bbdd710fd12f764a9fc972f1b954490,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2135,7 +2279,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 1044571313}
@@ -2216,7 +2360,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 1.25
+  m_padding: 0
   m_canvasRenderer: {fileID: 1044571314}
   m_TextComponent: {fileID: 998780045}
   m_materialReferenceIndex: 1
@@ -2328,7 +2472,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0bbdd710fd12f764a9fc972f1b954490, type: 2}
-  m_sharedMaterial: {fileID: 8842533363981715118, guid: 49fcac74d91fc4446aa891dcd0f13e9c,
+  m_sharedMaterial: {fileID: -6402352393105694696, guid: 0bbdd710fd12f764a9fc972f1b954490,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2406,7 +2550,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 479365674}
@@ -2426,6 +2570,95 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1187839864}
   m_CullTransparentMesh: 0
+--- !u!1001 &1315333091
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 799030922203834014, guid: a4b18e0cd27b55040b00d5b2520c6ee1,
+        type: 3}
+      propertyPath: textFields.Array.data[0]
+      value: 
+      objectReference: {fileID: 998780044}
+    - target: {fileID: 799030922203834014, guid: a4b18e0cd27b55040b00d5b2520c6ee1,
+        type: 3}
+      propertyPath: textFields.Array.data[1]
+      value: 
+      objectReference: {fileID: 1187839865}
+    - target: {fileID: 799030922203834014, guid: a4b18e0cd27b55040b00d5b2520c6ee1,
+        type: 3}
+      propertyPath: textFields.Array.data[2]
+      value: 
+      objectReference: {fileID: 2114649709}
+    - target: {fileID: 799030922203834014, guid: a4b18e0cd27b55040b00d5b2520c6ee1,
+        type: 3}
+      propertyPath: tv
+      value: 
+      objectReference: {fileID: 1411750062}
+    - target: {fileID: 2130504044545946892, guid: a4b18e0cd27b55040b00d5b2520c6ee1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2130504044545946892, guid: a4b18e0cd27b55040b00d5b2520c6ee1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2130504044545946892, guid: a4b18e0cd27b55040b00d5b2520c6ee1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2130504044545946892, guid: a4b18e0cd27b55040b00d5b2520c6ee1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2130504044545946892, guid: a4b18e0cd27b55040b00d5b2520c6ee1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2130504044545946892, guid: a4b18e0cd27b55040b00d5b2520c6ee1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2130504044545946892, guid: a4b18e0cd27b55040b00d5b2520c6ee1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2130504044545946892, guid: a4b18e0cd27b55040b00d5b2520c6ee1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2130504044545946892, guid: a4b18e0cd27b55040b00d5b2520c6ee1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2130504044545946892, guid: a4b18e0cd27b55040b00d5b2520c6ee1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2130504044545946892, guid: a4b18e0cd27b55040b00d5b2520c6ee1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344024595993151974, guid: a4b18e0cd27b55040b00d5b2520c6ee1,
+        type: 3}
+      propertyPath: m_Name
+      value: PostWrittenEvents
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a4b18e0cd27b55040b00d5b2520c6ee1, type: 3}
 --- !u!1 &1318684082
 GameObject:
   m_ObjectHideFlags: 0
@@ -2661,7 +2894,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 32, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1330567418
@@ -3209,6 +3442,7 @@ GameObject:
   - component: {fileID: 1825331267}
   - component: {fileID: 1825331269}
   - component: {fileID: 1825331268}
+  - component: {fileID: 1825331270}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -3256,8 +3490,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Wybor A
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 49fcac74d91fc4446aa891dcd0f13e9c, type: 2}
-  m_sharedMaterial: {fileID: 8842533363981715118, guid: 49fcac74d91fc4446aa891dcd0f13e9c,
+  m_fontAsset: {fileID: 11400000, guid: 0bbdd710fd12f764a9fc972f1b954490, type: 2}
+  m_sharedMaterial: {fileID: -6402352393105694696, guid: 0bbdd710fd12f764a9fc972f1b954490,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3283,14 +3517,14 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 34.01
-  m_fontSizeBase: 34.01
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_textAlignment: 257
+  m_fontStyle: 1
+  m_textAlignment: 514
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -3355,6 +3589,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1825331266}
   m_CullTransparentMesh: 0
+--- !u!114 &1825331270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825331266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1825331268}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1923080782
 GameObject:
   m_ObjectHideFlags: 0
@@ -3400,9 +3677,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   writeSpeed: 0.07
+  dialogTextField: {fileID: 1187839866}
   canWrite: 1
   pauseTimeAtDot: 5
-  longPause: 2
+  longPause: 1.5
 --- !u!82 &1923080785
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3523,9 +3801,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1979181156}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -9715.363}
-  m_LocalScale: {x: 107.94849, y: 107.94849, z: 107.94849}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1825161065}
   m_RootOrder: 0
@@ -3544,65 +3822,560 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   narratorTextField: {fileID: 998780045}
   dialogTextField: {fileID: 1187839866}
-  threeChoiceSetup: {fileID: 682573633}
-  twoChoiceSetup: {fileID: 1324003310}
-  is3Choice: 0
+  dialogChoices: {fileID: 2114649710}
   scenariusz:
   - sceneId: 0_0
     currentTextField: {fileID: 998780045}
     textAuthor: 
-    text: "Rok 2022 - trzeci rok globalnej pandemii, jesie\u0144, dzie\u0144 0. \n\nWracasz
-      do domu po ci\u0119\u017Ckiej wyprawie po \u017Cywno\u015B\u0107. W momencie
-      zamkni\u0119cia drzwi, na zewn\u0105trz lun\u0105\u0142 deszcz.^U\u015Bmiechasz
-      si\u0119 pod nosem i zm\u0119czony rzucasz plecakiem w r\xF3g pokoju. Jak co
-      wiecz\xF3r zasiadasz do dzisiejszej transmisji wiadomo\u015Bci z nadziej\u0105,
-      \u017Ce mo\u017Ce tym razem us\u0142yszysz dobre wie\u015Bci."
-    afterTextDelay: 1
+    text: "18.07.2022, Washington. Dzie\u0144 0. ^\n\nTrzeci rok globalnej pandemii.
+      Ka\u017Cdy walczy o swoje \u017Cycie. \nUpadek gospodarki spowodowa\u0142,
+      \u017Ce handel wymienny, \u0142upie\u017Ccy, bandyci i walka nie s\u0105 nikomu
+      obce. Na drogach nie jest bezpiecznie, ludzie zabunkrowali si\u0119 w domach
+      i pilnuj\u0105 tego, co im pozosta\u0142o.^ Najdro\u017Cszym towarem jest jedzenie,
+      jego limitowane zapasy ci\u0105gl\u0119 si\u0119 kurcz\u0105, a prace nad szczepionk\u0105
+      jeszcze trwaj\u0105."
+    afterTextDelay: 2
     nextSceneId: 0_1
     wasSkipped: 0
+    overrideDialog: 0
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
   - sceneId: 0_1
-    currentTextField: {fileID: 1187839866}
-    textAuthor: <#b5d1ff>Prezenter</color>
-    text: "W dzisiejszym wydaniu wiadomo\u015Bci.\nSzpitale s\u0105 przepe\u0142nione,
-      prace nad lekiem wci\u0105\u017C trwaj\u0105, rz\u0105d USA \u2026*SZUM*...\n"
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Wracasz z poszukiwa\u0144 po\u017Cywienia.^ Wchodzisz do swojego domu
+      i wygl\u0105dasz przez szpary w zabitych deskami oknach.^ Zauwa\u017Casz drobne
+      krople deszczu spadaj\u0105ce z nieba. U\u015Bmiechasz si\u0119 pod nosem,
+      lecz szybko wracasz na ziemi\u0119.^ W tle wida\u0107 ogie\u0144, wraki samochod\xF3w,
+      poszukiwaczy i z\u0142odziei. Masz nadziej\u0119, \u017Ce tw\xF3j dom ich nie
+      zainteresuje.^Mia\u0142e\u015B szcz\u0119scie, uda\u0142o Ci si\u0119 zdoby\u0107
+      wystarczaj\u0105co zapas\xF3w na par\u0119 dni. "
     afterTextDelay: 2
     nextSceneId: 0_2
     wasSkipped: 0
+    overrideDialog: 0
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
   - sceneId: 0_2
     currentTextField: {fileID: 998780045}
     textAuthor: 
-    text: "Nieznana Ci, ukryta w cieniach posta\u0107 pojawia si\u0119 na wizji.."
-    afterTextDelay: 2.5
+    text: "Odchodzisz od okna. Zostawiasz plecak z po\u017Cywieniem przy \u015Bcianie
+      i zasiadasz przed telewizorem.^Jak codzie\u0144 masz nadziej\u0119, \u017Ce
+      tym razem wiadomo\u015Bci poinformuj\u0105 Ci\u0119 o czym\u015B, co doda Ci
+      nadziei, \u017Ce Twoje \u017Cycie wr\xF3ci jeszcze kiedy\u015B do normy."
+    afterTextDelay: 2
     nextSceneId: 0_3
     wasSkipped: 0
+    overrideDialog: 0
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 286181337}
+          m_MethodName: FadeOutTextField
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 998780045}
+            m_ObjectArgumentAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - sceneId: 0_3
     currentTextField: {fileID: 1187839866}
-    textAuthor: <color=white>Mayflower</color>
-    text: "Witajcie, nazywamy si\u0119 Mayflower. Jeste\u015Bmy tutaj po to, aby
-      otworzy\u0107 wam oczy.^Rzeczywisto\u015B\u0107 nie jest taka jak my\u015Blicie,
-      od pocz\u0105tku jeste\u015Bcie ok\u0142amywani. Szczepionka nigdy nie trafi
-      w wasze r\u0119ce,  rz\u0105d chce j\u0105 zatrzyma\u0107 dla siebie by was
-      kontrolowa\u0107.^Do\u0142\u0105czcie do nas, nic nie jest jeszcze stracone.^Stawiajcie
-      op\xF3r. \n\n<#3dff51>+1 202 MAYFLOWER</color>"
+    textAuthor: <#b5d1ff>Prezenter</color>
+    text: "W dzisiejszym wydaniu wiadomo\u015Bci.^\nSzpitale s\u0105 przepe\u0142nione,
+      prace nad szczepionk\u0105 wci\u0105\u017C trwaj\u0105, a rz\u0105d USA..."
     afterTextDelay: 1
     nextSceneId: 0_4
     wasSkipped: 0
+    overrideDialog: 0
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
   - sceneId: 0_4
     currentTextField: {fileID: 998780045}
     textAuthor: 
-    text: "Zauwa\u017Casz, \u017Ce osoba podwija r\u0119kaw a spod niego ukazuj\u0119
-      si\u0119 tatua\u017C.\nSymbol kotwicy owini\u0119tej r\xF3\u017C\u0105 mocno
-      zapada Ci w pami\u0119\u0107.^\n\nTransmisja ko\u0144czy si\u0119."
-    afterTextDelay: 1
-    nextSceneId: end
+    text: "Transmisja zostaje przerwana. Pojawiaj\u0105 si\u0119 zak\u0142\xF3cenia.\nPo
+      chwili sygna\u0142 si\u0119 stabilizuje, lecz na miejscu prezentera znajduje
+      si\u0119 inna osoba."
+    afterTextDelay: 2
+    nextSceneId: 0_5
     wasSkipped: 0
-  - sceneId: 0_2
+    overrideDialog: 0
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 286181337}
+          m_MethodName: FadeOutTextField
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 998780045}
+            m_ObjectArgumentAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - sceneId: 0_5
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=white>Mayflower</color>
+    text: "Witajcie, nazywamy si\u0119 Mayflower. Jeste\u015Bmy tutaj po to, aby
+      otworzy\u0107 wam oczy.^\nRzeczywisto\u015B\u0107 nie jest taka jaka wam si\u0119
+      wydaje. Od pocz\u0105tku byli\u015Bcie ok\u0142amywani. Szczepionka nigdy nie
+      trafi w wasze r\u0119ce. W\u0142adze trzymaj\u0105 j\u0105 dla siebie a wy
+      jeste\u015Bcie tylko ich marionetkami.^"
+    afterTextDelay: 1
+    nextSceneId: 0_6
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_6
+    currentTextField: {fileID: 1187839866}
+    textAuthor: 0Mayflower
+    text: "Do\u0142\u0105czcie do nas, nic nie jest jeszcze stracone.^Stawiajcie.
+      Op\xF3r."
+    afterTextDelay: 1
+    nextSceneId: 0_7
+    wasSkipped: 0
+    overrideDialog: 0
+    msgAfterScene: <br><#4dff5b>+1 202 MAYFLOWER</color>
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_7
     currentTextField: {fileID: 998780045}
     textAuthor: 
-    text: "Nieznana Ci, ukryta w cieniach posta\u0107 pojawia si\u0119 na wizji.."
+    text: "Zauwa\u017Casz, \u017Ce posta\u0107 zaczyna podwija\u0107 r\u0119kaw.
+      Nast\u0119pnie wstaje i pokazuje tatua\u017C do kamery.^\nSymbol kotwicy owini\u0119tej
+      r\xF3\u017C\u0105 mocno zapada Ci w pami\u0119\u0107.\n"
+    afterTextDelay: 2
+    nextSceneId: 0_8
+    wasSkipped: 0
+    overrideDialog: 0
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_8
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Sygna\u0142 zanika.^\nPo chwili wiadomo\u015Bci wracaj\u0105 na anten\u0119.^"
     afterTextDelay: 1
+    nextSceneId: 0_9
+    wasSkipped: 0
+    overrideDialog: 0
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 286181337}
+          m_MethodName: FadeOutTextField
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 998780045}
+            m_ObjectArgumentAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - sceneId: 0_9
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#b5d1ff>Prezenter</color>
+    text: "Przepraszamy za zak\u0142\xF3cenia, a teraz wracamy do wiadomo\u015Bci..."
+    afterTextDelay: 1
+    nextSceneId: 0_10
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_10
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "D\u017Awi\u0119ki w tle milkn\u0105.^\nOddajesz si\u0119 rozmy\u015Blaniu
+      nad tym co w\u0142a\u015Bnie us\u0142ysza\u0142e\u015B.^"
+    afterTextDelay: 1
+    nextSceneId: 0_11
+    wasSkipped: 0
+    overrideDialog: 0
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_11
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs (Ja)</color>
+    text: "Nie wierz\u0119.."
+    afterTextDelay: 2
+    nextSceneId: 0_12
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_12
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Zaciskasz pi\u0119\u015Bci i jeszcze przez chwil\u0119 siedzisz na fotelu.^\nLedwo
+      jeste\u015B w stanie zrozumie\u0107 to co si\u0119 w\u0142a\u015Bnie sta\u0142o.^\nMasz
+      przeczucie, \u017Ce to dopiero pocz\u0105tek.^"
+    afterTextDelay: 2
+    nextSceneId: 0_13
+    wasSkipped: 0
+    overrideDialog: 0
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_13
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs (Ja)</color>
+    text: Co teraz?
+    afterTextDelay: 2
+    nextSceneId: x0_14
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: x0_14
+    currentTextField: {fileID: 0}
+    textAuthor: 
+    text: 
+    afterTextDelay: 0
+    nextSceneId: 
+    wasSkipped: 0
+    overrideDialog: 0
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_15_1
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Wstajesz z fotela i podchodzisz do telewizora.^\nJu\u017C mia\u0142e\u015B
+      wciska\u0107 wy\u0142\u0105cznik, gdy nagle na wizji pojawi\u0142a si\u0119
+      znajoma Ci osoba."
+    afterTextDelay: 2
+    nextSceneId: 0_16
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_15_2
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Twoje rozmy\u015Blania zostaj\u0105 przerwane przez ukazanie si\u0119
+      znajomej osoby na wizji."
+    afterTextDelay: 2
+    nextSceneId: 0_16
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_16
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "gen. Charles Wilson.^ Aktualny Sekretarz Obrony Stan\xF3w Zjednoczonych,
+      kt\xF3rego zapami\u0119ta\u0142e\u015B  jako dow\xF3dc\u0119 twojego oddzia\u0142u,
+      gdy by\u0142e\u015B jeszcze w wojsku."
+    afterTextDelay: 2
+    nextSceneId: 0_17
+    wasSkipped: 0
+    overrideDialog: 0
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_17
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=red>gen. Charles Wilson</color>
+    text: "Witajcie obywatele.^\nWiadomo\u015B\u0107 t\u0105 kieruj\u0119 do wszelkich
+      ruch\xF3w oporu, kt\xF3r\u0119 utworzy\u0142y si\u0119 na skutek pandemii.
+      Jako sekretarz obrony jestem zmuszony podj\u0105\u0107 dzia\u0142ania zbroje
+      maj\u0105ce na celu st\u0142umienie zamieszek..."
+    afterTextDelay: 2
+    nextSceneId: 0_18
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_18
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Przesz\u0142o\u015B\u0107 powraca do twoich my\u015Bli.^ S\u0142yszysz
+      d\u017Awi\u0119ki wybuch\xF3w i \u015Bwistu kul.^\n\n"
+    afterTextDelay: 2
+    nextSceneId: 0_19
+    wasSkipped: 0
+    overrideDialog: 0
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 286181337}
+          m_MethodName: SwitchTv
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - sceneId: 0_19
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Godzina 13:02, 23 wrze\u015Bnia 2014.^ Afganistan, misja zwiadowcza Delta-4.^\nZnajdujecie
+      si\u0119 w ruinach budynku pod ostrza\u0142em Al-ka'idy."
+    afterTextDelay: 2
+    nextSceneId: 0_20
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_20
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=green>Charles Wilson</color>
+    text: "Nie damy rady d\u0142u\u017Cej si\u0119 tutaj utrzyma\u0107, musimy si\u0119
+      wycofa\u0107.^"
+    afterTextDelay: 2
+    nextSceneId: 0_21
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_21
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "W momencie wycofywania si\u0119 oddzia\u0142u, jedna z kul przeszywa nog\u0119
+      Raya, twojego najbli\u017Cszego przyjaciela. "
+    afterTextDelay: 0
+    nextSceneId: 0_22
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_22
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: Ray!
+    afterTextDelay: 2
+    nextSceneId: 0_23
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_23
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=green>Charles Wilson</color>
+    text: Zostaw go.^ Nie mamy czasu, uciekaj.
+    afterTextDelay: 2
+    nextSceneId: 0_24
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_24
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Nie mog\u0119 go tak zostawi\u0107, pom\xF3\u017Ccie mu! Gdzie jest medyk?!^"
+    afterTextDelay: 0
+    nextSceneId: 0_25
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_25
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Jeden z medyk\xF3w wyci\u0105ga apteczk\u0119 i biegnie w stron\u0119
+      Raya.^"
+    afterTextDelay: 1
+    nextSceneId: 0_26
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_26
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Charles zatrzymuje medyka i wyci\u0105ga bro\u0144.^"
+    afterTextDelay: 0
+    nextSceneId: 0_27
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_27
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=red>Charles Wilson</color>
+    text: "Ja mu pomog\u0119.^"
+    afterTextDelay: 0
+    nextSceneId: 0_28
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_28
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Charles oddaje strza\u0142 prosto w g\u0142ow\u0119 le\u017C\u0105cego
+      Raya.^"
+    afterTextDelay: 2
+    nextSceneId: 0_29
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_29
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Cia\u0142o martwego przyjaciela opada Ci na r\u0119ce.^ Jeste\u015B przepe\u0142niony
+      smutkiem i gniewem. \u0141zy nap\u0142ywaj\u0105 Ci do oczu, ale gniew powstrzymuje
+      Ci\u0119 od p\u0142aczu."
+    afterTextDelay: 2
+    nextSceneId: 0_30
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_30
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Pod wp\u0142ywem emocji chwytasz za bro\u0144 i kierujesz j\u0105 w stron\u0119
+      charlesa"
+    afterTextDelay: 2
+    nextSceneId: x0_31
+    wasSkipped: 0
+    overrideDialog: 0
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: x0_31
+    currentTextField: {fileID: 0}
+    textAuthor: 
+    text: 
+    afterTextDelay: 0
+    nextSceneId: 
+    wasSkipped: 0
+    overrideDialog: 0
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_32_1
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "W momencie poci\u0105gni\u0119cia za spust jeden z pobliskich \u017C\xF3\u0142nierzy
+      rzuca si\u0119 na Ciebie sprawiaj\u0105c, \u017Ce kula przelatuje obok g\u0142owy
+      Charlesa"
+    afterTextDelay: 2
+    nextSceneId: 0_33
+    wasSkipped: 0
+    overrideDialog: 0
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_32_2
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "W ostatniej chwili powstrzymujesz sw\xF3j gniew i odk\u0142adasz bro\u0144,
+      wiedz\u0105c, \u017Ce i tak nic to nie zmieni."
+    afterTextDelay: 2
+    nextSceneId: 0_33
+    wasSkipped: 0
+    overrideDialog: 0
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_33
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "To jeszcze nie koniec.^ Zap\u0142acisz mi za to.^"
+    afterTextDelay: 2
+    nextSceneId: 0_34
+    wasSkipped: 0
+    overrideDialog: 0
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_34
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Pod nieustaj\u0105cym naporem talib\xF3w zostali\u015Bcie zmuszeni do
+      natychmiastowej ucieczki. Sytuacja, kt\xF3ra mia\u0142a miejsce mocno zapad\u0142a
+      Ci w pami\u0119\u0107 i poprzysi\u0105g\u0142e\u015B sobie, \u017Ce pom\u015Bcisz
+      \u015Bmier\u0107 Raya."
+    afterTextDelay: 2
+    nextSceneId: 0_35
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - sceneId: 0_35
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Po tym tragicznym wydarzeniu, zdecydowa\u0142e\u015B si\u0119 opu\u015Bci\u0107
+      s\u0142u\u017Cbe wojskow\u0105."
+    afterTextDelay: 2
     nextSceneId: end
     wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &2006161057
 GameObject:
   m_ObjectHideFlags: 0
@@ -3874,6 +4647,7 @@ GameObject:
   - component: {fileID: 2083552075}
   - component: {fileID: 2083552077}
   - component: {fileID: 2083552076}
+  - component: {fileID: 2083552078}
   m_Layer: 5
   m_Name: Text (TMP) (2)
   m_TagString: Untagged
@@ -3921,8 +4695,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Wybor B
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 49fcac74d91fc4446aa891dcd0f13e9c, type: 2}
-  m_sharedMaterial: {fileID: 8842533363981715118, guid: 49fcac74d91fc4446aa891dcd0f13e9c,
+  m_fontAsset: {fileID: 11400000, guid: 0bbdd710fd12f764a9fc972f1b954490, type: 2}
+  m_sharedMaterial: {fileID: -6402352393105694696, guid: 0bbdd710fd12f764a9fc972f1b954490,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3948,14 +4722,14 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 34.01
-  m_fontSizeBase: 34.01
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_textAlignment: 257
+  m_fontStyle: 1
+  m_textAlignment: 514
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -4020,6 +4794,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2083552074}
   m_CullTransparentMesh: 0
+--- !u!114 &2083552078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083552074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2083552076}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2114649708
 GameObject:
   m_ObjectHideFlags: 0
@@ -4029,6 +4846,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2114649709}
+  - component: {fileID: 2114649710}
   m_Layer: 5
   m_Name: ChoicesField
   m_TagString: Untagged
@@ -4054,9 +4872,61 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -172, y: -216}
+  m_AnchoredPosition: {x: -156, y: -216}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2114649710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114649708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86f6106482697604fbc8a4157fc0bfb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wybory:
+  - sceneId: x0_14
+    wybor:
+      choicesFields:
+      - {fileID: 1825331268}
+      - {fileID: 2083552076}
+      choices:
+      - "Wy\u0142\u0105cz telewizor"
+      - "Ogl\u0105daj dalej"
+      destination:
+      - 0_15_1
+      - 0_15_2
+      destinationId: 
+    is3Choice: 0
+    choiceMade: 0
+  - sceneId: x0_31
+    wybor:
+      choicesFields:
+      - {fileID: 1825331268}
+      - {fileID: 2083552076}
+      choices:
+      - Strzel
+      - "Od\u0142\xF3\u017C bro\u0144"
+      destination:
+      - 0_32_1
+      - 0_32_2
+      destinationId: 
+    is3Choice: 0
+    choiceMade: 0
+  setup3: {fileID: 682573633}
+  setup2: {fileID: 1324003310}
+  currentChoice:
+    sceneId: 
+    wybor:
+      choicesFields: []
+      choices: []
+      destination: []
+      destinationId: 
+    is3Choice: 0
+    choiceMade: 0
 --- !u!1001 &7082565186738043271
 PrefabInstance:
   m_ObjectHideFlags: 0

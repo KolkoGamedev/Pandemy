@@ -4,12 +4,12 @@
     <list default="true" id="cab1a42a-8276-4325-a83b-c3e26dfca05a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pandemy/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pandemy/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pandemy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pandemy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PostWrittenEvents.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PostWrittenEvents.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/IntroManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IntroManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PostWrittenEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PostWrittenEvents.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/TypeWriter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TypeWriter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,15 +21,17 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FogManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PostWrittenEvents.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IntroManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Game.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DialogChoices.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DialogSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TypeWriter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Menu.unity" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -42,9 +44,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/DialogSystem1.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IntroManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ButtonChoiceReceiver.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DialogChoices.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PostWrittenEvents.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DialogSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TypeWriter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PostWrittenEvents.cs" />
       </list>
     </option>
   </component>
@@ -96,7 +100,12 @@
       <workItem from="1603190177531" duration="468000" />
       <workItem from="1605719051103" duration="775000" />
       <workItem from="1605798017231" duration="12129000" />
-      <workItem from="1607090564683" duration="10640000" />
+      <workItem from="1607090564683" duration="10789000" />
+      <workItem from="1607190445419" duration="1831000" />
+      <workItem from="1607199737536" duration="783000" />
+      <workItem from="1607211141775" duration="4511000" />
+      <workItem from="1607259856621" duration="6514000" />
+      <workItem from="1608038209371" duration="3599000" />
     </task>
     <servers />
   </component>

@@ -54,7 +54,7 @@ public class IntroManager : MonoBehaviour
                 break;
                 
             yield return new WaitUntil(() => _typeWriter.canWrite || _isSkipped);
-            _typeWriter.TypewriteSentence(introDialogue[i].text, welcomeText, introDialogue[i].delay, writeSpeed);
+            _typeWriter.TypewriteSentence(new DialogScene(introDialogue[i].text, welcomeText, introDialogue[i].delay), writeSpeed);
         }
         yield return new WaitForSeconds(3);                            // Wait 3 seconds after last text to fade out
         StartCoroutine(FadeOutText());
