@@ -77,9 +77,6 @@ public class DialogSystem : MonoBehaviour
             if (_sceneId[0] == 'x')
             {
                 dialogChoices.SetupChoices(_sceneId);
-                // ODWOLANIE DO SKRYPTU Z WYBORAMI
-                // KORUTYNA KTORA PO UKOCZENIU ZWRACA SCENE ID
-                // _sceneId = korutyna();
 
                 yield return new WaitUntil(() => dialogChoices.currentChoice.choiceMade);
 
@@ -99,10 +96,11 @@ public class DialogScene
     [TextArea(5, 15)] public string text;
     public float afterTextDelay;
     public string nextSceneId;
-    public bool wasSkipped;
+    [HideInInspector] public bool wasSkipped;
     public bool overrideDialog;
     public string msgAfterScene;
     public UnityEvent OnSceneFinished;
+    public AudioClip soundEvent;
 
     public DialogScene(string text, TMP_Text textField, float delay)
     {

@@ -16,7 +16,6 @@ public class TypeWriter : MonoBehaviour
 {
     [SerializeField] private float writeSpeed = 0.1f;
     public static event Action OnLetterWritten = delegate {  };
-    //public static event Action<TMP_Text> OnSceneFinishedWritting = delegate {  };
     public static TypeWriter Instance;
     [SerializeField] private TMP_Text dialogTextField = null;
     public bool canWrite = true;
@@ -48,11 +47,13 @@ public class TypeWriter : MonoBehaviour
             if (dialogScene.textAuthor == "")
             {
                 dialogScene.text = dialogScene.text.Replace('^', ' ');
+                dialogScene.text = dialogScene.text.Replace('&', ' ');
                 dialogScene.currentTextField.text = dialogScene.text;
             }
             else
             {
                 goalSentence = goalSentence.Replace('^', ' ');
+                dialogScene.text = goalSentence.Replace('&', ' ');
                 string completedSentence = goalSentence.Substring(currentSentence.Length, goalSentence.Length-currentSentence.Length);
                 dialogScene.currentTextField.text += completedSentence;
                 dialogScene.currentTextField.text += dialogScene.msgAfterScene;
@@ -88,17 +89,22 @@ public class TypeWriter : MonoBehaviour
             
             if (currentScene.overrideDialog)
                 dialogTextField.text = "";
-
-            if(currentScene.text[index] != '^')
+            
+            if(currentScene.text[index] != '^' && currentScene.text[index] != '&')
                 currentWord += currentScene.text[index];
-            else
+            else if(currentScene.text[index] == '^')
             {
                 currentWord += ' ';
                 yield return new WaitForSeconds(longPause);
             }
+            else if (currentScene.text[index] == '&')
+            {
+                currentWord += ' ';
+                AudioManager.Instance.PlaySound(currentScene.soundEvent);
+            }
             currentScene.currentTextField.text = currentWord;
             OnLetterWritten?.Invoke();
-            
+
             if (index > 1 && currentScene.text[index] == ' ' && currentScene.text[index-1] == '.')
                 yield return new WaitForSeconds(writeSpeed * pauseTimeAtDot);
             else

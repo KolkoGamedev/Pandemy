@@ -3842,11 +3842,12 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_1
     currentTextField: {fileID: 998780045}
     textAuthor: 
     text: "Wracasz z poszukiwa\u0144 po\u017Cywienia.^ Wchodzisz do swojego domu
-      i wygl\u0105dasz przez szpary w zabitych deskami oknach.^ Zauwa\u017Casz drobne
+      i wygl\u0105dasz przez szpary w zabitych deskami oknach.^Zauwa\u017Casz drobne
       krople deszczu spadaj\u0105ce z nieba. U\u015Bmiechasz si\u0119 pod nosem,
       lecz szybko wracasz na ziemi\u0119.^ W tle wida\u0107 ogie\u0144, wraki samochod\xF3w,
       poszukiwaczy i z\u0142odziei. Masz nadziej\u0119, \u017Ce tw\xF3j dom ich nie
@@ -3860,6 +3861,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_2
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -3886,6 +3888,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    soundEvent: {fileID: 0}
   - sceneId: 0_3
     currentTextField: {fileID: 1187839866}
     textAuthor: <#b5d1ff>Prezenter</color>
@@ -3899,6 +3902,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_4
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -3908,7 +3912,7 @@ MonoBehaviour:
     afterTextDelay: 2
     nextSceneId: 0_5
     wasSkipped: 0
-    overrideDialog: 0
+    overrideDialog: 1
     msgAfterScene: 
     OnSceneFinished:
       m_PersistentCalls:
@@ -3924,6 +3928,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    soundEvent: {fileID: 0}
   - sceneId: 0_5
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=white>Mayflower</color>
@@ -3940,6 +3945,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_6
     currentTextField: {fileID: 1187839866}
     textAuthor: 0Mayflower
@@ -3953,6 +3959,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_7
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -3967,6 +3974,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_8
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -3990,6 +3998,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    soundEvent: {fileID: 0}
   - sceneId: 0_9
     currentTextField: {fileID: 1187839866}
     textAuthor: <#b5d1ff>Prezenter</color>
@@ -4002,6 +4011,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_10
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4015,6 +4025,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_11
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs (Ja)</color>
@@ -4027,6 +4038,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_12
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4041,6 +4053,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_13
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs (Ja)</color>
@@ -4053,6 +4066,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: x0_14
     currentTextField: {fileID: 0}
     textAuthor: 
@@ -4065,6 +4079,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_15_1
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4079,6 +4094,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_15_2
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4092,6 +4108,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_16
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4106,6 +4123,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_17
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=red>gen. Charles Wilson</color>
@@ -4121,6 +4139,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_18
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4145,6 +4164,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    soundEvent: {fileID: 0}
   - sceneId: 0_19
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4158,6 +4178,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_20
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=green>Charles Wilson</color>
@@ -4171,6 +4192,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_21
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4184,6 +4206,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_22
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs</color>
@@ -4196,6 +4219,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_23
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=green>Charles Wilson</color>
@@ -4208,6 +4232,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_24
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs</color>
@@ -4220,6 +4245,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_25
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4233,6 +4259,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_26
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4245,6 +4272,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_27
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=red>Charles Wilson</color>
@@ -4257,6 +4285,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_28
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4270,6 +4299,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_29
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4284,6 +4314,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_30
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4297,6 +4328,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: x0_31
     currentTextField: {fileID: 0}
     textAuthor: 
@@ -4309,6 +4341,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_32_1
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4323,6 +4356,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_32_2
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4336,6 +4370,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_33
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs</color>
@@ -4348,6 +4383,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_34
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4363,6 +4399,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
   - sceneId: 0_35
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4376,6 +4413,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
 --- !u!1 &2006161057
 GameObject:
   m_ObjectHideFlags: 0
