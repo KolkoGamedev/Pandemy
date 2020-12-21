@@ -1135,7 +1135,7 @@ MonoBehaviour:
   m_text: Wybor C
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0bbdd710fd12f764a9fc972f1b954490, type: 2}
-  m_sharedMaterial: {fileID: 8842533363981715118, guid: 49fcac74d91fc4446aa891dcd0f13e9c,
+  m_sharedMaterial: {fileID: -6402352393105694696, guid: 0bbdd710fd12f764a9fc972f1b954490,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1336,7 +1336,7 @@ MonoBehaviour:
   m_text: Wybor A
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0bbdd710fd12f764a9fc972f1b954490, type: 2}
-  m_sharedMaterial: {fileID: 8842533363981715118, guid: 49fcac74d91fc4446aa891dcd0f13e9c,
+  m_sharedMaterial: {fileID: -6402352393105694696, guid: 0bbdd710fd12f764a9fc972f1b954490,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1787,7 +1787,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1929,7 +1929,7 @@ MonoBehaviour:
   m_text: Wybor B
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0bbdd710fd12f764a9fc972f1b954490, type: 2}
-  m_sharedMaterial: {fileID: 8842533363981715118, guid: 49fcac74d91fc4446aa891dcd0f13e9c,
+  m_sharedMaterial: {fileID: -6402352393105694696, guid: 0bbdd710fd12f764a9fc972f1b954490,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3894,7 +3894,7 @@ MonoBehaviour:
     textAuthor: <#b5d1ff>Prezenter</color>
     text: "W dzisiejszym wydaniu wiadomo\u015Bci.^\nSzpitale s\u0105 przepe\u0142nione,
       prace nad szczepionk\u0105 wci\u0105\u017C trwaj\u0105, a rz\u0105d USA..."
-    afterTextDelay: 1
+    afterTextDelay: 2
     nextSceneId: 0_4
     wasSkipped: 0
     overrideDialog: 0
@@ -3909,7 +3909,7 @@ MonoBehaviour:
     text: "Transmisja zostaje przerwana. Pojawiaj\u0105 si\u0119 zak\u0142\xF3cenia.\nPo
       chwili sygna\u0142 si\u0119 stabilizuje, lecz na miejscu prezentera znajduje
       si\u0119 inna osoba."
-    afterTextDelay: 2
+    afterTextDelay: 3
     nextSceneId: 0_5
     wasSkipped: 0
     overrideDialog: 1
@@ -4020,7 +4020,7 @@ MonoBehaviour:
     afterTextDelay: 1
     nextSceneId: 0_11
     wasSkipped: 0
-    overrideDialog: 0
+    overrideDialog: 1
     msgAfterScene: 
     OnSceneFinished:
       m_PersistentCalls:
@@ -4048,7 +4048,7 @@ MonoBehaviour:
     afterTextDelay: 2
     nextSceneId: 0_13
     wasSkipped: 0
-    overrideDialog: 0
+    overrideDialog: 1
     msgAfterScene: 
     OnSceneFinished:
       m_PersistentCalls:
@@ -4128,9 +4128,9 @@ MonoBehaviour:
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=red>gen. Charles Wilson</color>
     text: "Witajcie obywatele.^\nWiadomo\u015B\u0107 t\u0105 kieruj\u0119 do wszelkich
-      ruch\xF3w oporu, kt\xF3r\u0119 utworzy\u0142y si\u0119 na skutek pandemii.
-      Jako sekretarz obrony jestem zmuszony podj\u0105\u0107 dzia\u0142ania zbroje
-      maj\u0105ce na celu st\u0142umienie zamieszek..."
+      ruch\xF3w oporu, kt\xF3re utworzy\u0142y si\u0119 na skutek pandemii. Jako
+      sekretarz obrony jestem zmuszony podj\u0105\u0107 dzia\u0142ania zbrojne maj\u0105ce
+      na celu st\u0142umienie zamieszek..."
     afterTextDelay: 2
     nextSceneId: 0_18
     wasSkipped: 0
@@ -4251,7 +4251,7 @@ MonoBehaviour:
     textAuthor: 
     text: "Jeden z medyk\xF3w wyci\u0105ga apteczk\u0119 i biegnie w stron\u0119
       Raya.^"
-    afterTextDelay: 1
+    afterTextDelay: 2
     nextSceneId: 0_26
     wasSkipped: 0
     overrideDialog: 1
@@ -4319,7 +4319,7 @@ MonoBehaviour:
     currentTextField: {fileID: 998780045}
     textAuthor: 
     text: "Pod wp\u0142ywem emocji chwytasz za bro\u0144 i kierujesz j\u0105 w stron\u0119
-      charlesa"
+      Charlesa"
     afterTextDelay: 2
     nextSceneId: x0_31
     wasSkipped: 0
@@ -4345,7 +4345,7 @@ MonoBehaviour:
   - sceneId: 0_32_1
     currentTextField: {fileID: 998780045}
     textAuthor: 
-    text: "W momencie poci\u0105gni\u0119cia za spust jeden z pobliskich \u017C\xF3\u0142nierzy
+    text: "W momencie poci\u0105gni\u0119cia za spust jeden z pobliskich \u017Co\u0142nierzy
       rzuca si\u0119 na Ciebie sprawiaj\u0105c, \u017Ce kula przelatuje obok g\u0142owy
       Charlesa"
     afterTextDelay: 2
@@ -4382,7 +4382,18 @@ MonoBehaviour:
     msgAfterScene: 
     OnSceneFinished:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 286181337}
+          m_MethodName: FadeOutTextField
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 998780045}
+            m_ObjectArgumentAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     soundEvent: {fileID: 0}
   - sceneId: 0_34
     currentTextField: {fileID: 998780045}
@@ -4404,11 +4415,298 @@ MonoBehaviour:
     currentTextField: {fileID: 998780045}
     textAuthor: 
     text: "Po tym tragicznym wydarzeniu, zdecydowa\u0142e\u015B si\u0119 opu\u015Bci\u0107
-      s\u0142u\u017Cbe wojskow\u0105."
+      s\u0142u\u017Cb\u0119 wojskow\u0105."
+    afterTextDelay: 2
+    nextSceneId: 0_36
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_36
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Nag\u0142y huk wyrywa Ci\u0119 z ci\u0105gu niechcianych wspomnie\u0144.\nKierujesz
+      sw\xF3j wzrok ku drzwiom. Ha\u0142as nie ust\u0119puje, ju\u017C wiesz, \u017Ce
+      kto\u015B pr\xF3buje si\u0119 dosta\u0107 do \u015Brodka. "
+    afterTextDelay: 2
+    nextSceneId: 0_37
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_37
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Po cichu wstajesz i zaczynasz rozgl\u0105da\u0107 si\u0119 w poszukiwaniu
+      broni."
+    afterTextDelay: 2
+    nextSceneId: x0_38
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: x0_38
+    currentTextField: {fileID: 0}
+    textAuthor: 
+    text: 
+    afterTextDelay: 0
+    nextSceneId: 
+    wasSkipped: 0
+    overrideDialog: 0
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_39_0
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Podchodzisz do zabitego deskami okna i starasz si\u0119 dostrzec kto dobija
+      si\u0119 do drzwi."
+    afterTextDelay: 2
+    nextSceneId: 0_40
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_39_1
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Pewnie chwytasz za berett\u0119 le\u017C\u0105c\u0105 na stole. Sprawdzasz
+      magazynek. Masz 3 naboje.^"
+    afterTextDelay: 2
+    nextSceneId: 0_41
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_39_2
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Podchodzisz do kominka i chwytasz za \u0142om.^ Powoli zbli\u017Casz si\u0119
+      w stron\u0119 drzwi i ustawiasz si\u0119 za nimi."
+    afterTextDelay: 2
+    nextSceneId: 0_42
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_40
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Widzisz ch\u0142opaka, kt\xF3ry ewidentnie potrzebuje pomocy.^Zauwa\u017Casz,
+      \u017Ce do ch\u0142opca zbli\u017Ca si\u0119 zamaskowany m\u0119\u017Cczyzna."
+    afterTextDelay: 2
+    nextSceneId: 0_43
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_41
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Zbli\u017Casz si\u0119 do drzwi.^ S\u0142yszysz krzyki i b\u0142aganie
+      o pomoc."
+    afterTextDelay: 2
+    nextSceneId: 0_43
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_42
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Zbli\u017Casz si\u0119 do drzwi.^ S\u0142yszysz krzyki i b\u0142aganie
+      o pomoc."
+    afterTextDelay: 2
+    nextSceneId: 0_44
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_43
+    currentTextField: {fileID: 1187839866}
+    textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
+    text: "B\u0142agam, pomocy! On mnie zabije, niech kto\u015B otworzy, prosz\u0119!^"
+    afterTextDelay: 2
+    nextSceneId: 0_45
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_44
+    currentTextField: {fileID: 1187839866}
+    textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
+    text: "B\u0142agam, pomocy! On mnie zabije, niech kto\u015B otworzy, prosz\u0119!^"
+    afterTextDelay: 2
+    nextSceneId: 0_46
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_45
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Ah.. najwidoczniej nie wystarczy mi wra\u017Ce\u0144 na dzisiaj. Szybkim
+      krokiem podchodzisz do stolika. Zabierasz berett\u0119 i wracasz pod drzwi."
+    afterTextDelay: 2
+    nextSceneId: 0_47
+    wasSkipped: 0
+    overrideDialog: 0
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_46
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Ah.. najwidoczniej nie wystarczy mi wra\u017Ce\u0144 na dzisiaj."
+    afterTextDelay: 2
+    nextSceneId: 0_48
+    wasSkipped: 0
+    overrideDialog: 0
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_47
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Schyl si\u0119.^"
+    afterTextDelay: 2
+    nextSceneId: 0_49
+    wasSkipped: 0
+    overrideDialog: 0
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_48
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Schyl si\u0119.^"
+    afterTextDelay: 2
+    nextSceneId: 0_50
+    wasSkipped: 0
+    overrideDialog: 0
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_49
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Otwierasz drzwi i szybkim ruchem wystawiasz bro\u0144 na zewn\u0105trz
+      celuj\u0105c w napastnika.^Oddajesz pojedy\u0144czy, celny strza\u0142.^M\u0119\u017Cczyzna
+      pada na ziemi\u0119.^"
+    afterTextDelay: 2
+    nextSceneId: 0_51
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_50
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Otwierasz drzwi i wykonujesz szybki i porz\u0105dny zamach w g\u0142ow\u0119
+      napastnika.^\nKrew trysn\u0119\u0142a na wszystkie strony, a m\u0119\u017Cczyzna
+      bezw\u0142adnie opad\u0142 na ziemi\u0119."
+    afterTextDelay: 2
+    nextSceneId: 0_51
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_51
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Szybko. Wchod\u017A do \u015Brodka.^"
+    afterTextDelay: 2
+    nextSceneId: 0_52
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_52
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Ch\u0142opak chwil\u0119 si\u0119 waha, po czym po\u015Bpiesznym krokiem
+      wchodzi do Twojego domu."
+    afterTextDelay: 2
+    nextSceneId: 0_53
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 286181337}
+          m_MethodName: FadeOutTextField
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 998780045}
+            m_ObjectArgumentAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    soundEvent: {fileID: 0}
+  - sceneId: 0_53
+    currentTextField: {fileID: 1187839866}
+    textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
+    text: "Dzi\u0119kuj\u0119.. Na prawd\u0119 dzi\u0119kuj\u0119.. Uratowa\u0142e\u015B
+      mi \u017Cycie.."
     afterTextDelay: 2
     nextSceneId: end
     wasSkipped: 0
-    overrideDialog: 1
+    overrideDialog: 0
     msgAfterScene: 
     OnSceneFinished:
       m_PersistentCalls:
@@ -4953,6 +5251,23 @@ MonoBehaviour:
       - 0_32_2
       destinationId: 
     is3Choice: 0
+    choiceMade: 0
+  - sceneId: x0_38
+    wybor:
+      choicesFields:
+      - {fileID: 605140501}
+      - {fileID: 953791085}
+      - {fileID: 589773830}
+      choices:
+      - "Sp\xF3jrz przez okno"
+      - "Si\u0119gnij po pistolet"
+      - "Chwy\u0107 za \u0142om"
+      destination:
+      - 0_39_0
+      - 0_39_1
+      - 0_39_2
+      destinationId: 
+    is3Choice: 1
     choiceMade: 0
   setup3: {fileID: 682573633}
   setup2: {fileID: 1324003310}
