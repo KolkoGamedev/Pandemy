@@ -53,10 +53,13 @@ public class PostWrittenEvents : MonoBehaviour
                 textFields[i].localPosition = new Vector3(-156, textFields[i].localPosition.y, textFields[i].localPosition.z);
             }
         }
-            
-        
     }
 
+    public void ClearSaves()
+    {
+        PlayerPrefs.DeleteAll();
+    }
+    
     public void TurnOffGame()
     {
         Application.Quit();
