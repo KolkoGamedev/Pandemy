@@ -6192,7 +6192,7 @@ MonoBehaviour:
     text: "Opuszczacie budynek z pustymi r\u0119koma. Udajecie si\u0119 na pobliski
       przystanek by obmy\u015Bli\u0107 dalszy plan."
     afterTextDelay: 2
-    nextSceneId: 1_51
+    nextSceneId: 1_41
     wasSkipped: 0
     overrideDialog: 1
     msgAfterScene: 
