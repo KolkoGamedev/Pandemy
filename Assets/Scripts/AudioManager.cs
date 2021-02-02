@@ -12,6 +12,8 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip menuSoundtrack = null;
     [SerializeField] private FogManager fogManager = null;
     [SerializeField] private List<AudioClip> listOfTypingSounds = null;
+
+    [SerializeField] private AudioSource soundtrack = null;
     //[SerializeField] private AudioSource typewriterSource = null;
     private AudioSource _as;
 
@@ -34,7 +36,8 @@ public class AudioManager : MonoBehaviour
 
     private void StartPlayingSoundtrack()
     {
-        _as.PlayOneShot(menuSoundtrack);
+        soundtrack.Play();
+        
     }
 
     private void PlayTypingSound()

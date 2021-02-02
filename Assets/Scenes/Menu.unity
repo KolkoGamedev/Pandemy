@@ -195,6 +195,133 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 53448776}
   m_CullTransparentMesh: 1
+--- !u!1 &56282173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 56282174}
+  - component: {fileID: 56282175}
+  m_Layer: 0
+  m_Name: soundtrack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &56282174
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56282173}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 904258822}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &56282175
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56282173}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: bcf4e43d9b3fd69409bfea40670d3f04, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &175994445
 GameObject:
   m_ObjectHideFlags: 0
@@ -1879,7 +2006,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.7672933, y: 0.42069173, z: -104.20384}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 56282174}
   m_Father: {fileID: 1095261136}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1908,6 +2036,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: ba3c52c5df3a86648a065c683e99d68f, type: 3}
   - {fileID: 8300000, guid: a9802c0e499e8e74b8985a61e63abd3f, type: 3}
   - {fileID: 8300000, guid: 2a411de5aa7647b4e8e1ab3e90c0fa0c, type: 3}
+  soundtrack: {fileID: 56282175}
 --- !u!82 &904258824
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1922,7 +2051,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -4021,6 +4150,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 286181337}
+          m_MethodName: SwitchTv
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     soundEvent: {fileID: 0}
     minigame: {fileID: 0}
   - sceneId: 0_3
@@ -4041,7 +4181,7 @@ MonoBehaviour:
   - sceneId: 0_4
     currentTextField: {fileID: 998780045}
     textAuthor: 
-    text: "Transmisja zostaje przerwana. Pojawiaj\u0105 si\u0119 zak\u0142\xF3cenia.\nPo
+    text: "Transmisja zostaje&przerwana. Pojawiaj\u0105 si\u0119 zak\u0142\xF3cenia.\nPo
       chwili sygna\u0142 si\u0119 stabilizuje, lecz na miejscu prezentera znajduje
       si\u0119 inna osoba."
     afterTextDelay: 3
@@ -4063,7 +4203,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    soundEvent: {fileID: 0}
+    soundEvent: {fileID: 8300000, guid: 729efd78b25d36c4d912a5a4cb4ada01, type: 3}
     minigame: {fileID: 0}
   - sceneId: 0_5
     currentTextField: {fileID: 1187839866}
@@ -4088,7 +4228,7 @@ MonoBehaviour:
     textAuthor: 0Mayflower
     text: "Do\u0142\u0105czcie do nas, nic nie jest jeszcze stracone.^Stawiajcie.
       Op\xF3r."
-    afterTextDelay: 1
+    afterTextDelay: 2
     nextSceneId: 0_7
     wasSkipped: 0
     overrideDialog: 0
@@ -4293,7 +4433,7 @@ MonoBehaviour:
   - sceneId: 0_18
     currentTextField: {fileID: 998780045}
     textAuthor: 
-    text: "Przesz\u0142o\u015B\u0107 powraca do twoich my\u015Bli.^ S\u0142yszysz
+    text: "Przesz\u0142o\u015B\u0107 powraca do twoich my\u015Bli.^S\u0142yszysz
       d\u017Awi\u0119ki wybuch\xF3w i \u015Bwistu kul.^\n\n"
     afterTextDelay: 2
     nextSceneId: 0_19
@@ -4314,7 +4454,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    soundEvent: {fileID: 0}
+    soundEvent: {fileID: 8300000, guid: 137df00cb2a784040a324b03dfeb76fd, type: 3}
     minigame: {fileID: 0}
   - sceneId: 0_19
     currentTextField: {fileID: 998780045}
@@ -4329,7 +4469,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
-    soundEvent: {fileID: 0}
+    soundEvent: {fileID: 8300000, guid: 137df00cb2a784040a324b03dfeb76fd, type: 3}
     minigame: {fileID: 0}
   - sceneId: 0_20
     currentTextField: {fileID: 1187839866}
@@ -4378,7 +4518,7 @@ MonoBehaviour:
   - sceneId: 0_23
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=green>Charles Wilson</color>
-    text: Zostaw go.^ Nie mamy czasu, uciekaj.
+    text: Zostaw go.^Nie mamy czasu, uciekaj.
     afterTextDelay: 2
     nextSceneId: 0_24
     wasSkipped: 0
@@ -4435,7 +4575,7 @@ MonoBehaviour:
   - sceneId: 0_27
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=red>Charles Wilson</color>
-    text: "Ja mu pomog\u0119.^"
+    text: "Ja mu&pomog\u0119.^"
     afterTextDelay: 0
     nextSceneId: 0_28
     wasSkipped: 0
@@ -4444,7 +4584,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
-    soundEvent: {fileID: 0}
+    soundEvent: {fileID: 8300000, guid: 7bf39d53684fca64e92ff59540de6be3, type: 3}
     minigame: {fileID: 0}
   - sceneId: 0_28
     currentTextField: {fileID: 998780045}
@@ -4597,7 +4737,7 @@ MonoBehaviour:
   - sceneId: 0_36
     currentTextField: {fileID: 998780045}
     textAuthor: 
-    text: "Nag\u0142y huk wyrywa Ci\u0119 z ci\u0105gu niechcianych wspomnie\u0144.\nKierujesz
+    text: "Nag\u0142y&huk wyrywa Ci\u0119 z ci\u0105gu niechcianych wspomnie\u0144.\nKierujesz
       sw\xF3j wzrok ku drzwiom. Ha\u0142as nie ust\u0119puje, ju\u017C wiesz, \u017Ce
       kto\u015B pr\xF3buje si\u0119 dosta\u0107 do \u015Brodka. "
     afterTextDelay: 2
@@ -4608,7 +4748,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
-    soundEvent: {fileID: 0}
+    soundEvent: {fileID: 8300000, guid: 59a602cfc1d33aa45a04d3ba5fa590ef, type: 3}
     minigame: {fileID: 0}
   - sceneId: 0_37
     currentTextField: {fileID: 998780045}
@@ -4819,7 +4959,7 @@ MonoBehaviour:
     currentTextField: {fileID: 998780045}
     textAuthor: 
     text: "Otwierasz drzwi i szybkim ruchem wystawiasz bro\u0144 na zewn\u0105trz
-      celuj\u0105c w napastnika.^Oddajesz pojedy\u0144czy, celny strza\u0142.^M\u0119\u017Cczyzna
+      celuj\u0105c w napastnika.^Oddajesz&pojedy\u0144czy, celny strza\u0142.^M\u0119\u017Cczyzna
       pada na ziemi\u0119.^"
     afterTextDelay: 2
     nextSceneId: 0_51
@@ -4829,7 +4969,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
-    soundEvent: {fileID: 0}
+    soundEvent: {fileID: 8300000, guid: f52ec17bedb6a754abcb06380334a669, type: 3}
     minigame: {fileID: 0}
   - sceneId: 0_50
     currentTextField: {fileID: 998780045}
