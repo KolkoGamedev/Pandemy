@@ -155,17 +155,23 @@ public class TypeWriter : MonoBehaviour
         while (currentSentence.Length < currentScene.text.Length)
         {
             canWrite = false;
-
-            if (currentScene.text[index] != '^')
-            {
-                currentSentence += currentScene.text[index];
-                sign = currentScene.text[index];
-            }
-            else
+            
+            if(currentScene.text[index] == '^')
             {
                 currentSentence += ' ';
                 sign = ' ';
                 yield return new WaitForSeconds(longPause);
+            }
+            else if (currentScene.text[index] == '&')
+            {
+                currentSentence += ' ';
+                sign = ' ';
+                AudioManager.Instance.PlaySound(currentScene.soundEvent);
+            }
+            else
+            {
+                currentSentence += currentScene.text[index];
+                sign = currentScene.text[index];
             }
             currentScene.currentTextField.text += sign;
             OnLetterWritten?.Invoke();
