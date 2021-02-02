@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -5866,7 +5866,7 @@ MonoBehaviour:
     text: "W mie\u015Bcie znajduje si\u0119 opuszczony sztab wojskowy, mo\u017Ce
       by\u0107 tam niebezpiecznie, ale w po\u015Bpiechu mo\u017Ce nie zabrali wszystkiego."
     afterTextDelay: 2
-    nextSceneId: 
+    nextSceneId: 1_50
     wasSkipped: 0
     overrideDialog: 1
     msgAfterScene: 
@@ -6201,12 +6201,964 @@ MonoBehaviour:
         m_Calls: []
     soundEvent: {fileID: 0}
     minigame: {fileID: 0}
-  - sceneId: 1_47
+  - sceneId: 1_51
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Postanawiacie spr\xF3bowa\u0107 swojego szcz\u0119\u015Bcia w opuszczonym
+      budynku militarnym.^Po oko\u0142o 30 minutach jeste\u015Bcie u celu. "
+    afterTextDelay: 2
+    nextSceneId: 1_52
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_52
     currentTextField: {fileID: 1187839866}
     textAuthor: <#bf7cbe>Johnny</color>
-    text: "Chyba nas nie p-polubi\u0142."
+    text: Czy na pewno jest tutaj p-pusto?
     afterTextDelay: 2
-    nextSceneId: 1_47
+    nextSceneId: 1_53
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_53
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Zaraz si\u0119 przekonamy."
+    afterTextDelay: 2
+    nextSceneId: 1_54
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_54
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Podchodzicie do g\u0142\xF3wnego wej\u015Bcia i pr\xF3bujecie dosta\u0107
+      si\u0119 do \u015Brodka, lecz drzwi s\u0105 zabarykadowane. "
+    afterTextDelay: 2
+    nextSceneId: 1_55
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_55
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Cholera...^T\u0119dy nie da rady, zablokowane."
+    afterTextDelay: 2
+    nextSceneId: 1_56
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_56
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#bf7cbe>Johnny</color>
+    text: "Obejd\u017Amy budynek dooko\u0142a, mo\u017Ce znajdziemy inne wej\u015Bcie."
+    afterTextDelay: 2
+    nextSceneId: 1_57
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_57
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Id\u0105c wzd\u0142u\u017C scian budynku, zaauwa\u017Cacie wybite okno
+      na pierwszym pi\u0119trze."
+    afterTextDelay: 2
+    nextSceneId: 1_58
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_58
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Dawaj m\u0142ody, podsadze Ci\u0119 do okna.^Spr\xF3buj si\u0119 dosta\u0107
+      do \u015Brodka i \u015Bci\u0105gn\u0105\u0107 barykad\u0119 z frontowych drzwi."
+    afterTextDelay: 2
+    nextSceneId: 1_59
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_59
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#bf7cbe>Johnny</color>
+    text: "No dobra, s-spr\xF3buj\u0119."
+    afterTextDelay: 2
+    nextSceneId: 1_60
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_60
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Johnny zwinnie wskakuje przez okno i przedostaje si\u0119 do g\u0142\xF3wnego
+      wej\u015Bcia, po czym otwiera drzwi Martinowi."
+    afterTextDelay: 2
+    nextSceneId: 1_61
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_61
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Po wej\u015Bciu do \u015Brodka Twoim oczom ukazuje si\u0119 zdemolowane
+      pomieszczenie, pokryte p\xF3\u0142centymetrow\u0105 wartsw\u0105 kurzu,a \u015Bciany
+      zosta\u0142y zdewastowane."
+    afterTextDelay: 2
+    nextSceneId: 1_62
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_62
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#bf7cbe>Johnny</color>
+    text: "Budynek jest kilkupi\u0119trowy, b-b\u0119dzie sporo do przeszukania.
+      R-rozdzielamy si\u0119?"
+    afterTextDelay: 2
+    nextSceneId: x1_63
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: x1_63
+    currentTextField: {fileID: 0}
+    textAuthor: 
+    text: 
+    afterTextDelay: 2
+    nextSceneId: 
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_64_0
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Powinni\u015Bmy si\u0119 rozdzieli\u0107. Ja sprawdz\u0119 g\xF3r\u0119,
+      a Ty przeszukaj d\xF3\u0142."
+    afterTextDelay: 2
+    nextSceneId: 1_65
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_64_1
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Nie powinni\u015Bmy si\u0119 rozdziela\u0107, to niebezpieczne. Zacznijmy
+      od sprawdzenia do\u0142u."
+    afterTextDelay: 2
+    nextSceneId: 1_85
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_65
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Postanawiacie si\u0119 rozdzieli\u0107. Po wej\u015Bciu na pierwsze pi\u0119tro
+      ukazuje Ci si\u0119 wiele pomieszcze\u0144.^Podczas sprawdzania jednego z nich
+      s\u0142yszysz krzyki dobiegaj\u0105ce z piwnicy."
+    afterTextDelay: 2
+    nextSceneId: 1_66
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_66
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Zbiegaj\u0105c schodami w d\xF3\u0142 s\u0142yszysz strza\u0142 z broni
+      palnej."
+    afterTextDelay: 2
+    nextSceneId: 1_67
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_67
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: Johnny!?
+    afterTextDelay: 2
+    nextSceneId: 1_68
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_68
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Wyci\u0105gasz bro\u0144 i powoli zbli\u017Casz si\u0119 do pomieszczenia,
+      w kt\xF3rym jest zapalone \u015Bwiat\u0142o. Wychylasz si\u0119 przez drzwi
+      i zauwa\u017Casz Johnnego, kt\xF3ry le\u017Cy na ziemi oraz  zamaskowan\u0105
+      posta\u0107, kt\xF3ra stoi z ty\u0142u pokoju."
+    afterTextDelay: 2
+    nextSceneId: 1_69
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_69
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Bez zastanowienia poci\u0105gasz za spust i oddajesz celny strza\u0142.^Przeciwnik
+      bezw\u0142adnie upada na ziemi\u0119, a bro\u0144 wypada mu z r\u0105k."
+    afterTextDelay: 2
+    nextSceneId: 1_70
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_70
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Podbiegasz do Johnnego i zauwa\u017Casz, \u017Ce zosta\u0142 on trafiony
+      w klatk\u0119 piersiow\u0105. Sprawdzasz puls, lecz jest on niewyczuwalny.
+      Jest to koniec waszej wsp\xF3lnej przygody."
+    afterTextDelay: 2
+    nextSceneId: 1_71
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_71
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "By\u0142e\u015B dobrym kompanem Johnny..."
+    afterTextDelay: 3
+    nextSceneId: 1_72
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_72
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Po kr\xF3tkiej chwili zbierasz si\u0119 do kupy i zauwa\u017Casz, \u017Ce
+      cz\u0142owiek, kt\xF3rego zastrzeli\u0142e\u015B ma przy sobie dziwn\u0105
+      paczk\u0119. Podchodzisz do jego cia\u0142a, aby to sprawdzi\u0107."
+    afterTextDelay: 2
+    nextSceneId: 1_73
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_73
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Okazuj\u0119 si\u0119, \u017Ce w paczce znajduj\u0105 si\u0119 poszukiwane
+      przez was materia\u0142y wybuchowe. Zdoby\u0142e\u015B to po co przyszed\u0142e\u015B. "
+    afterTextDelay: 2
+    nextSceneId: 1_74
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_74
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Zabierasz cia\u0142o ch\u0142opaka, \u0142adunki wybuchowe i postanawiasz
+      wr\xF3ci\u0107 do obozu."
+    afterTextDelay: 2
+    nextSceneId: 1_75
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_75
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Po oko\u0142o 40 minutach docierasz do wej\u015Bcia obozu. Pukasz 3-krotnie
+      w \u015Bcian\u0119 kontenera, lecz tym razem nie wita Cie ju\u017C tak u\u015Bmiechni\u0119ta
+      twarz wartownika."
+    afterTextDelay: 2
+    nextSceneId: 1_76
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_76
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=green>Wartownik</color>
+    text: "Bo\u017Ce, co si\u0119 sta\u0142o?"
+    afterTextDelay: 2
+    nextSceneId: 1_77
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_77
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Niestety Johnny nie prze\u017Cy\u0142 naszej ostatniej wyprawy. Zosta\u0142
+      zastrzelony, pochowajcie go godnie."
+    afterTextDelay: 2
+    nextSceneId: 1_78
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_78
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=green>Wartownik</color>
+    text: "Jasne, zajm\u0119 si\u0119 tym osobi\u015Bcie..."
+    afterTextDelay: 2
+    nextSceneId: 1_79
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_79
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Przekazujesz cia\u0142o ch\u0142opca wartownikowi i udajesz si\u0119 do
+      siedziby Ryana."
+    afterTextDelay: 2
+    nextSceneId: 1_80
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_80
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Ryan, mam to o co prosi\u0142e\u015B."
+    afterTextDelay: 2
+    nextSceneId: 1_81
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_81
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#0a731f>Ryan Bridges</color>
+    text: "\u015Awietnie, a gdzie Johnny?"
+    afterTextDelay: 2
+    nextSceneId: 1_82
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_82
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Niestety, Johnny zosta\u0142 zastrzelony."
+    afterTextDelay: 2
+    nextSceneId: 1_83
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_83
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#0a731f>Ryan Bridges</color>
+    text: "Niech to szlag...^By\u0142 to jeden z najlepszych poszukiwaczy jakich
+      widzia\u0142em.^Niech jego \u015Bmier\u0107 nie p\xF3jdzie na marne."
+    afterTextDelay: 2
+    nextSceneId: 1_84
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_84
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#0a731f>Ryan Bridges</color>
+    text: "Niestety nie mamy czasu, aby go op\u0142akiwa\u0107. Zbli\u017Ca si\u0119
+      wielki dzie\u0144, do kt\xF3rego przygotowywali\u015Bmy si\u0119 miesi\u0105cami.
+      Z tymi \u0142adunkami nareszcie mo\u017Cemy zrealizowa\u0107 nasz plan."
+    afterTextDelay: 2
+    nextSceneId: 1_95
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_85
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Postanawiacie si\u0119 nie rozdziela\u0107 i rozpocz\u0105\u0107 poszukiwania
+      od g\xF3ry budynku, lecz ko\u0144cz\u0105 si\u0119 one niepowodzeniem. Ostatnim
+      nie sprawdzonym miejscem jest piwnica."
+    afterTextDelay: 2
+    nextSceneId: 1_86
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_86
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Po zej\u015Bciu schodami w d\xF3\u0142, zauwa\u017Cacie, i\u017C w jednym
+      z pomieszcze\u0144 jest zapalone \u015Bwiat\u0142o.^Po cichu zakradacie si\u0119
+      pod drzwi, spogl\u0105dasz do \u015Brodka i zauwa\u017Casz zamaskowan\u0105
+      posta\u0107, kt\xF3ra przeszukuje wojskowe szafki."
+    afterTextDelay: 2
+    nextSceneId: 1_87
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_87
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Ostro\u017Cnie wchodzisz do \u015Brodka i niezauwa\u017Calnie podchodzisz
+      do niczego nie spodziewaj\u0105cego si\u0119 poszukiwacza, po czym uderzasz
+      go kolb\u0105 pistoletu w g\u0142ow\u0119.^Posta\u0107 traci przytomno\u015B\u0107
+      i bezw\u0142adnie upada na ziemi\u0119."
+    afterTextDelay: 2
+    nextSceneId: 1_88
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_88
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Droga wolna, wchod\u017A."
+    afterTextDelay: 2
+    nextSceneId: 1_89
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_89
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Johnny ostro\u017Cnie wchodzi do pomieszczenia, po czym przeszukuje obezw\u0142adnione
+      cia\u0142o."
+    afterTextDelay: 2
+    nextSceneId: 1_90
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_90
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#bf7cbe>Johnny</color>
+    text: "Jest!! U-Uda\u0142o si\u0119!! Ten go\u015B\u0107 mia\u0142 ze sob\u0105
+      materia\u0142y!"
+    afterTextDelay: 2
+    nextSceneId: 1_91
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_91
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Dobrze, zabieraj je i spadajmy st\u0105d, bo nie wiadomo czy nasz kolega
+      by\u0142 tutaj sam."
+    afterTextDelay: 2
+    nextSceneId: 1_92
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_92
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Po oko\u0142o 40 minutach docieracie do wej\u015Bcia obozu. Przechodzicie
+      przez kontener witaj\u0105c sie z wartownikiem i udajecie si\u0119 do siedziby
+      Ryana."
+    afterTextDelay: 2
+    nextSceneId: 1_93
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_93
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Mamy to o co nas prosi\u0142e\u015B."
+    afterTextDelay: 2
+    nextSceneId: 1_94
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_94
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#0a731f>Ryan Bridges</color>
+    text: "\u015Awietnie, spisali\u015Bcie si\u0119 na medal!^By\u0142 to ostatni
+      element, kt\xF3rego potrzebowali\u015Bmy by wcieli\u0107 w \u017Cycie nasz
+      plan!"
+    afterTextDelay: 2
+    nextSceneId: 1_95
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_95
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: Jaki plan?
+    afterTextDelay: 2
+    nextSceneId: 1_96
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_96
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#0a731f>Ryan Bridges</color>
+    text: "Siadaj i s\u0142uchaj."
+    afterTextDelay: 2
+    nextSceneId: 1_97
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_97
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#0a731f>Ryan Bridges</color>
+    text: "Jutro o godzinie 3:00 szturmujemy budynek rz\u0105du. Przed budynkiem
+      znajduje si\u0119 30 uzbrojonych po z\u0119by \u017Co\u0142nierzy. Nie jeste\u015Bmy
+      uzbrojeni tak jak oni, ale mamy przewag\u0119 liczebn\u0105."
+    afterTextDelay: 2
+    nextSceneId: 1_98
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_98
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#0a731f>Ryan Bridges</color>
+    text: "Mamy 3 snajper\xF3w porozmieszczanych na pobliskich dachach. Nikt nie
+      wyjdzie przodem ani ty\u0142em niezauwa\u017Cony. Musimy dosta\u0107 si\u0119
+      do \u015Brodka budynku. Wed\u0142ug naszych informacji sejf z informacjami
+      o leku na ten syf znajduje si\u0119 na pi\u0119trze -1."
+    afterTextDelay: 2
+    nextSceneId: 1_99
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_99
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#0a731f>Ryan Bridges</color>
+    text: "W momencie, w kt\xF3rym dostaniemy si\u0119 do \u015Brodka sejf nie powinien
+      by\u0107 chroniony. Wszyscy b\u0119d\u0105 broni\u0107 Wilsona za wszelk\u0105
+      cen\u0119. Jego biuro znajduje si\u0119 na drugim pi\u0119trze, wi\u0119c droga
+      powinna by\u0107 wolna."
+    afterTextDelay: 2
+    nextSceneId: 1_100
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_100
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#0a731f>Ryan Bridges</color>
+    text: "Po ostatniej misji wiem, \u017Ce mog\u0119 Ci zaufa\u0107 wi\u0119c mam
+      dla Ciebie specjalne zadanie.^Podczas naszego szturmu, musisz niepostrze\u017Cenie
+      przedosta\u0107 si\u0119 do sejfu i pod\u0142o\u017Cy\u0107 na nim \u0142adunek
+      wybuchowy."
+    afterTextDelay: 2
+    nextSceneId: 1_101
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_101
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#0a731f>Ryan Bridges</color>
+    text: "Kod aktywuj\u0105cy \u0142adunek to 9562. Zapisz go sobie lub zapami\u0119taj.
+      Bez niego nie wysadzisz sejfu i ca\u0142a nasza robota p\xF3jdzie na marne."
+    afterTextDelay: 2
+    nextSceneId: 1_102
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_102
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Jasne, zrozumia\u0142em."
+    afterTextDelay: 2
+    nextSceneId: 1_103
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_103
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#0a731f>Ryan Bridges</color>
+    text: "W takim razie powodzenia i do zobaczenia jutro \u017Co\u0142nierzu."
+    afterTextDelay: 2
+    nextSceneId: 2_0
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 2_0
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Godzina 2:20, budzi Ci\u0119 obozowa syrena. Ryan zagl\u0105da do Twojego
+      namiotu."
+    afterTextDelay: 2
+    nextSceneId: 2_1
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 2_1
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#0a731f>Ryan Bridges</color>
+    text: "Wstawaj \u017Co\u0142nierzu, mamy kapitol do spalenia."
+    afterTextDelay: 2
+    nextSceneId: 2_2
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 2_2
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#0a731f>Ryan Bridges</color>
+    text: "Wi\u0119kszo\u015B\u0107 os\xF3b jest ju\u017C na miejscu, snajperzy s\u0105
+      rozstawieni na dachach, czekaj\u0105 na sygna\u0142 do rozpocz\u0119cia natarcia."
+    afterTextDelay: 2
+    nextSceneId: 2_3
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 2_3
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Wstajesz, zabierasz sw\xF3j ekwipunek, materia\u0142y wybuchowe, zak\u0142adasz
+      kamizelke, wk\u0142adasz bro\u0144 do kabury i wyruszasz wraz z reszt\u0105
+      rebeliant\xF3w w drog\u0119."
+    afterTextDelay: 2
+    nextSceneId: 2_4
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 2_4
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Po godzinie dotarli\u015Bcie na miejsce, z dala wida\u0107 budynek kapitolu.
+      Widzisz, \u017Ce jest silnie strze\u017Cony. \nWysiadacie z pojazd\xF3w i ustawiacie
+      si\u0119 na pozycjach."
+    afterTextDelay: 2
+    nextSceneId: 2_5
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 2_5
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#0a731f>Ryan Bridges</color>
+    text: "Wszyscy gotowi? Zaczynamy, do dzie\u0142a!"
+    afterTextDelay: 2
+    nextSceneId: 2_6
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 2_6
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Relebianci przyst\u0119puj\u0105 do szturmu.^Zaczyna si\u0119 krwawa bitwa
+      mi\u0119dzy oddzia\u0142ami Wilsona, a grup\u0105 buntownik\xF3w Ryana.^Nieustaj\u0105cy
+      \u015Bwist kul daje Ci mo\u017Cliwo\u015B\u0107, aby niepostrze\u017Cenie dotrze\u0107
+      do \u015Brodka kapitolu."
+    afterTextDelay: 2
+    nextSceneId: 2_7
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 2_7
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Po wej\u015Bciu do \u015Brodka budynku, rozl\u0105dasz si\u0119 w poszukiwaniu
+      \u017Co\u0142nierzy Wilsona, lecz nikogo nie wida\u0107.^Wszystko idzie zgodnie
+      z planem. "
+    afterTextDelay: 2
+    nextSceneId: 2_8
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 2_8
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Zauwa\u017Casz wind\u0119^Bez zawachania wchodzisz do \u015Brodka i wybierasz
+      przycisk -1. Po kr\xF3tkiej chwili zje\u017Cd\u017Casz w d\xF3\u0142 i drzwi
+      otwieraj\u0105 si\u0119. Twoim oczom ukazuje si\u0119  ogromny, stalowy sejf."
+    afterTextDelay: 2
+    nextSceneId: 2_9
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 2_9
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: 
+    afterTextDelay: 2
+    nextSceneId: 2_7
     wasSkipped: 0
     overrideDialog: 1
     msgAfterScene: 
@@ -6858,6 +7810,20 @@ MonoBehaviour:
       destination:
       - 1_39_0
       - 1_39_1
+      destinationId: 
+    is3Choice: 0
+    choiceMade: 0
+  - sceneId: x1_63
+    wybor:
+      choicesFields:
+      - {fileID: 1825331268}
+      - {fileID: 2083552076}
+      choices:
+      - "Rozdziel si\u0119"
+      - "Pozosta\u0144 razem"
+      destination:
+      - 1_64_0
+      - 1_64_1
       destinationId: 
     is3Choice: 0
     choiceMade: 0
