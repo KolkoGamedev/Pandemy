@@ -81,6 +81,8 @@ public class DialogSystem : MonoBehaviour
         {
             Application.Quit();
         }
+        if(Input.GetKeyDown(KeyCode.Z))
+            PlayerPrefs.DeleteAll();
     }
 
     private IEnumerator StartDialog()

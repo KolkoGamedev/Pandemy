@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2049,7 +2049,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.4
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6393,7 +6393,7 @@ MonoBehaviour:
   - sceneId: 1_66
     currentTextField: {fileID: 998780045}
     textAuthor: 
-    text: "Zbiegaj\u0105c schodami w d\xF3\u0142 s\u0142yszysz strza\u0142 z broni
+    text: "Zbiegaj\u0105c schodami w d\xF3\u0142 s\u0142yszysz&strza\u0142 z broni
       palnej."
     afterTextDelay: 2
     nextSceneId: 1_67
@@ -6403,7 +6403,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
-    soundEvent: {fileID: 0}
+    soundEvent: {fileID: 8300000, guid: f52ec17bedb6a754abcb06380334a669, type: 3}
     minigame: {fileID: 0}
   - sceneId: 1_67
     currentTextField: {fileID: 1187839866}
@@ -6439,7 +6439,7 @@ MonoBehaviour:
   - sceneId: 1_69
     currentTextField: {fileID: 998780045}
     textAuthor: 
-    text: "Bez zastanowienia poci\u0105gasz za spust i oddajesz celny strza\u0142.^Przeciwnik
+    text: "Bez zastanowienia poci\u0105gasz za&spust i oddajesz celny strza\u0142.^Przeciwnik
       bezw\u0142adnie upada na ziemi\u0119, a bro\u0144 wypada mu z r\u0105k."
     afterTextDelay: 2
     nextSceneId: 1_70
@@ -6449,7 +6449,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
-    soundEvent: {fileID: 0}
+    soundEvent: {fileID: 8300000, guid: f52ec17bedb6a754abcb06380334a669, type: 3}
     minigame: {fileID: 0}
   - sceneId: 1_70
     currentTextField: {fileID: 998780045}

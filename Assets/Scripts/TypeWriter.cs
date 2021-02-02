@@ -42,9 +42,10 @@ public class TypeWriter : MonoBehaviour
     {
         if (!dialogScene.wasSkipped && !dialogScene.nextSceneId.StartsWith("x") && !dialogScene.sceneId.StartsWith("x") && !dialogScene.sceneId.StartsWith("m"))
         {
-            StopAllCoroutines();
             
+            StopAllCoroutines();
             PostWrittenEvents.Instance.StopAllCoroutines();
+
             if (dialogScene.textAuthor == "")
             {
                 dialogScene.text = dialogScene.text.Replace('^', ' ');
@@ -61,10 +62,15 @@ public class TypeWriter : MonoBehaviour
             }
             dialogScene.OnSceneFinished?.Invoke();
             dialogScene.wasSkipped = true;
-            canWrite = true;
+            StartCoroutine(WaitForTimeAfterSkip(dialogScene));
         }
     }
 
+    public IEnumerator WaitForTimeAfterSkip(DialogScene dialogScene)
+    {
+        yield return new WaitForSeconds(dialogScene.afterTextDelay);
+        canWrite = true;
+    }
     public void TypewriteSentence(DialogScene currentScene)
     {
         StartCoroutine(Typewrite(currentScene));
