@@ -8,6 +8,6 @@ public class Labirynt : MiniGame
 {
     private void Awake()
     {
-        base.FinishGame();
+
     }
 }
