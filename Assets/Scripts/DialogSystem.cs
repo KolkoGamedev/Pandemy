@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DialogSystem : MonoBehaviour
@@ -39,21 +40,18 @@ public class DialogSystem : MonoBehaviour
             _events.SwitchTv();
             
         }
-            
+        if (PlayerPrefs.HasKey("Saved"))
+        {
+            _sceneId = PlayerPrefs.GetString("Saved");
+        }
+        else
+        {
+            PlayerPrefs.SetString("Saved", _sceneId);
+        }
     }
 
     public DialogScene FindSceneById(string id)
     {
-        /*
-        if (PlayerPrefs.HasKey("Saved"))
-        {
-            id = PlayerPrefs.GetString("Saved");
-        }
-        else
-        {
-            PlayerPrefs.SetString("Saved", id);
-        }*/
-        
         for (int i = 0; i < scenariusz.Count; i++)
         {
             if (scenariusz[i].sceneId == id)
@@ -77,6 +75,11 @@ public class DialogSystem : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             OnDialogSkipped?.Invoke(currentScene);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
         }
     }
 
@@ -116,6 +119,7 @@ public class DialogSystem : MonoBehaviour
             }
 
             _sceneId = currentScene.nextSceneId;
+            PlayerPrefs.SetString("Saved", _sceneId);
         }
     }
 }
