@@ -3246,6 +3246,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1727499827}
     m_Modifications:
+    - target: {fileID: 5038063723943777521, guid: 49820b5b70a955d42bc3d8e1e883af26,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.9799029
+      objectReference: {fileID: 0}
+    - target: {fileID: 5038063723943777521, guid: 49820b5b70a955d42bc3d8e1e883af26,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5038063725137357683, guid: 49820b5b70a955d42bc3d8e1e883af26,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -881
+      objectReference: {fileID: 0}
     - target: {fileID: 5038063725137357687, guid: 49820b5b70a955d42bc3d8e1e883af26,
         type: 3}
       propertyPath: m_Size.x
@@ -3365,6 +3380,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Labirynt
+      objectReference: {fileID: 0}
+    - target: {fileID: 5038063725164673115, guid: 49820b5b70a955d42bc3d8e1e883af26,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5038063725164673119, guid: 49820b5b70a955d42bc3d8e1e883af26,
         type: 3}
@@ -5273,12 +5293,11 @@ MonoBehaviour:
   - sceneId: 0_67
     currentTextField: {fileID: 1187839866}
     textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
-    text: "Nasz p-przyw\xF3dca.^To go widzia\u0142e\u015B w telewizji.^Mog\u0119
-      Ci\u0119 do niego zaprowadzi\u0107."
+    text: "Mog\u0119 Ci\u0119 do niego zaprowadzi\u0107."
     afterTextDelay: 2
     nextSceneId: 0_68
     wasSkipped: 0
-    overrideDialog: 1
+    overrideDialog: 0
     msgAfterScene: 
     OnSceneFinished:
       m_PersistentCalls:
