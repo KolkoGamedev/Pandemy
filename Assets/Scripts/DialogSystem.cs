@@ -22,7 +22,7 @@ public class DialogSystem : MonoBehaviour
     public static event Action<DialogScene> OnDialogSkipped = delegate {  };
     private FogManager _fogManager;
     private TypeWriter _tw;
-    private string _sceneId = "0_70";
+    private string _sceneId = "0_0";
     private DialogScene currentScene;
     private bool gameIsLoaded = true;
     private void Awake()

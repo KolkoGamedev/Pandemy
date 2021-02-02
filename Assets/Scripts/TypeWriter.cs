@@ -43,6 +43,7 @@ public class TypeWriter : MonoBehaviour
         if (!dialogScene.wasSkipped && !dialogScene.nextSceneId.StartsWith("x") && !dialogScene.sceneId.StartsWith("x") && !dialogScene.sceneId.StartsWith("m"))
         {
             StopAllCoroutines();
+            
             PostWrittenEvents.Instance.StopAllCoroutines();
             if (dialogScene.textAuthor == "")
             {

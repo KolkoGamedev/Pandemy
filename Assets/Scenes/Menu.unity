@@ -570,7 +570,6 @@ RectTransform:
   m_Children:
   - {fileID: 175994446}
   - {fileID: 662530149}
-  - {fileID: 1318684083}
   - {fileID: 198811892}
   m_Father: {fileID: 2006161061}
   m_RootOrder: 4
@@ -611,7 +610,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 196305488}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -780,7 +779,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 198811893}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 286181337}
+        m_MethodName: TurnOffGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &253779759
 GameObject:
   m_ObjectHideFlags: 0
@@ -2784,207 +2794,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4b18e0cd27b55040b00d5b2520c6ee1, type: 3}
---- !u!1 &1318684082
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1318684083}
-  - component: {fileID: 1318684085}
-  - component: {fileID: 1318684084}
-  - component: {fileID: 1318684086}
-  m_Layer: 5
-  m_Name: Text (TMP) (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1318684083
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1318684082}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 196305488}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -220}
-  m_SizeDelta: {x: 500, y: 200}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1318684084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1318684082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Options
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 49fcac74d91fc4446aa891dcd0f13e9c, type: 2}
-  m_sharedMaterial: {fileID: 8842533363981715118, guid: 49fcac74d91fc4446aa891dcd0f13e9c,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4287664272
-  m_fontColor: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_outlineColor:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontSize: 60
-  m_fontSizeBase: 60
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_textAlignment: 514
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
-  m_linkedTextComponent: {fileID: 0}
-  m_isLinkedTextComponent: 0
-  m_isTextTruncated: 0
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_ignoreRectMaskCulling: 0
-  m_ignoreCulling: 1
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_VertexBufferAutoSizeReduction: 1
-  m_firstVisibleCharacter: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_textInfo:
-    textComponent: {fileID: 1318684084}
-    characterCount: 7
-    spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
-    linkCount: 0
-    lineCount: 1
-    pageCount: 1
-    materialCount: 1
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
-  m_subTextObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1318684085
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1318684082}
-  m_CullTransparentMesh: 0
---- !u!114 &1318684086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1318684082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1318684084}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1324003310
 GameObject:
   m_ObjectHideFlags: 0
@@ -3170,6 +2979,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411750062}
   m_CullTransparentMesh: 0
+--- !u!1 &1412684365 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8345118097475610410, guid: 450c7f385219b794dba55fa79dbd7016,
+    type: 3}
+  m_PrefabInstance: {fileID: 187323781}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1431006720
 GameObject:
   m_ObjectHideFlags: 0
@@ -3302,6 +3117,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1727499827}
     m_Modifications:
+    - target: {fileID: 5038063725137357687, guid: 49820b5b70a955d42bc3d8e1e883af26,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 5038063725137357687, guid: 49820b5b70a955d42bc3d8e1e883af26,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 38
+      objectReference: {fileID: 0}
     - target: {fileID: 5038063725164673114, guid: 49820b5b70a955d42bc3d8e1e883af26,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3412,11 +3237,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: Labirynt
       objectReference: {fileID: 0}
+    - target: {fileID: 5038063725164673119, guid: 49820b5b70a955d42bc3d8e1e883af26,
+        type: 3}
+      propertyPath: gameCanvas
+      value: 
+      objectReference: {fileID: 1825161064}
+    - target: {fileID: 8284731007764642851, guid: 49820b5b70a955d42bc3d8e1e883af26,
+        type: 3}
+      propertyPath: gameCanvas
+      value: 
+      objectReference: {fileID: 1825161064}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49820b5b70a955d42bc3d8e1e883af26, type: 3}
 --- !u!224 &1541852487 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5038063725164673114, guid: 49820b5b70a955d42bc3d8e1e883af26,
+    type: 3}
+  m_PrefabInstance: {fileID: 1541852486}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1541852488 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5038063725164673115, guid: 49820b5b70a955d42bc3d8e1e883af26,
     type: 3}
   m_PrefabInstance: {fileID: 1541852486}
   m_PrefabAsset: {fileID: 0}
@@ -4138,7 +3979,7 @@ MonoBehaviour:
     currentTextField: {fileID: 998780045}
     textAuthor: 
     text: "Wracasz z poszukiwa\u0144 po\u017Cywienia.^ Wchodzisz do swojego domu
-      i wygl\u0105dasz przez szpary w zabitych deskami oknach.^Zauwa\u017Casz drobne
+      i wygl\u0105dasz przez szpary w zabitych deskami oknach.^Zauwa\u017Casz&drobne
       krople deszczu spadaj\u0105ce z nieba. U\u015Bmiechasz si\u0119 pod nosem,
       lecz szybko wracasz na ziemi\u0119.^ W tle wida\u0107 ogie\u0144, wraki samochod\xF3w,
       poszukiwaczy i z\u0142odziei. Masz nadziej\u0119, \u017Ce tw\xF3j dom ich nie
@@ -4152,7 +3993,7 @@ MonoBehaviour:
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
-    soundEvent: {fileID: 0}
+    soundEvent: {fileID: 8300000, guid: 93424edbdb5532247a3be2fb42fbcff1, type: 3}
     minigame: {fileID: 0}
   - sceneId: 0_2
     currentTextField: {fileID: 998780045}
@@ -5372,7 +5213,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
-    minigame: {fileID: 0}
+    minigame: {fileID: 1541852488}
   - sceneId: 1_1
     currentTextField: {fileID: 1187839866}
     textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
@@ -5819,7 +5660,7 @@ MonoBehaviour:
     text: "W mie\u015Bcie znajduje si\u0119 opuszczony sztab wojskowy, mo\u017Ce
       by\u0107 tam niebezpiecznie, ale w po\u015Bpiechu mo\u017Ce nie zabrali wszystkiego."
     afterTextDelay: 2
-    nextSceneId: 1_50
+    nextSceneId: 1_51
     wasSkipped: 0
     overrideDialog: 1
     msgAfterScene: 
@@ -7109,15 +6950,305 @@ MonoBehaviour:
   - sceneId: 2_9
     currentTextField: {fileID: 998780045}
     textAuthor: 
+    text: "Niewiele my\u015Bl\u0105\u0107 wyci\u0105gasz materia\u0142y wybuchowe,
+      podchodzisz do sejfu i podk\u0142adasz \u0142adunek."
+    afterTextDelay: 2
+    nextSceneId: m2_10
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 286181337}
+          m_MethodName: FadeOutTextField
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 998780045}
+            m_ObjectArgumentAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: m2_10
+    currentTextField: {fileID: 0}
+    textAuthor: 
     text: 
     afterTextDelay: 2
-    nextSceneId: 2_7
+    nextSceneId: 2_11
     wasSkipped: 0
     overrideDialog: 1
     msgAfterScene: 
     OnSceneFinished:
       m_PersistentCalls:
         m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 1412684365}
+  - sceneId: 2_11
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Po pod\u0142o\u017Ceniu \u0142adunku odchodzisz na bezpieczny dystans.^Kryjesz
+      si\u0119 za stalowymi drzwiami i czekasz na wybuch."
+    afterTextDelay: 2
+    nextSceneId: 2_12
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 2_12
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Sejf zosta\u0142 wysadzony.^Przebijasz si\u0119 przez ob\u0142oki dymu
+      i py\u0142u wchodz\u0105c do sejfu.^Na samym \u015Brodku widzisz akta. Zagl\u0105dasz
+      do \u015Brodka, \u017Ceby si\u0119 upewni\u0107, \u017Ce dotycz\u0105 lekarstwa.
+      Kierujesz si\u0119 do wyj\u015Bcia zabieraj\u0105c teczk\u0119 ze sob\u0105."
+    afterTextDelay: 2
+    nextSceneId: 2_13
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 2_13
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Podchodz\u0105c do windy zauwa\u017Casz, \u017Ce winda zje\u017Cd\u017Ca
+      w d\xF3\u0142.^Drzwi otwieraj\u0105 si\u0119 a za nimi ukazuje Ci si\u0119
+      znajoma twarz."
+    afterTextDelay: 2
+    nextSceneId: 2_14
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 2_14
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=red>Charles Wilson</color>
+    text: "Kop\u0119 lat, Martin."
+    afterTextDelay: 2
+    nextSceneId: 2_15
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 2_15
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "R\xF3wnie\u017C si\u0119 ciesz\u0119, \u017Ce Ci\u0119 widz\u0119, Charles.\t"
+    afterTextDelay: 2
+    nextSceneId: 2_16
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 2_16
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Nawet nie wiesz, ile czeka\u0142em na ten moment."
+    afterTextDelay: 2
+    nextSceneId: 2_17
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 2_17
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Martin i Charles wyci\u0105gaj\u0105 bro\u0144 i mierz\u0105 do siebie."
+    afterTextDelay: 2
+    nextSceneId: 2_18
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 2_18
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Mo\u017Ce zr\xF3bmy to w starym, dobrym stylu?"
+    afterTextDelay: 2
+    nextSceneId: 2_19
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 2_19
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Martin po tych s\u0142owach opuszcza bro\u0144 i wyrzuca j\u0105 na ziemi\u0119."
+    afterTextDelay: 2
+    nextSceneId: 2_20
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 2_20
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=red>Charles Wilson</color>
+    text: "Wol\u0119 pozosta\u0107 przy sprawdzonych metodach."
+    afterTextDelay: 2
+    nextSceneId: 2_21
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 2_21
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Charles oddaje strza\u0142.^Mija on jednak Martina, kt\xF3ry zdo\u0142a\u0142
+      si\u0119 uchyli\u0107, po czym rzuca si\u0119 na Wilsona powalaj\u0105c go
+      na ziemi\u0119. Bro\u0144 genera\u0142a wypada mu z d\u0142oni"
+    afterTextDelay: 2
+    nextSceneId: 2_22
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 2_22
+    currentTextField: {fileID: 1187839866}
+    textAuthor: ' <color=yellow>Martin Hobbs</color>'
+    text: "Nigdy nie by\u0142e\u015B honorowy. Teraz zap\u0142acisz za to co zrobi\u0142e\u015B."
+    afterTextDelay: 2
+    nextSceneId: 2_23
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 2_23
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Wywi\u0105zuje si\u0119 walka na pi\u0119\u015Bci.^Masz dominuj\u0105c\u0105
+      pozycj\u0119, zasypujesz Wilsona gradem szybkich cios\xF3w.^Po chwili walki,
+      Charles si\u0119ga za pas i wyci\u0105ga n\xF3\u017C, kt\xF3ry wbija Ci w udo."
+    afterTextDelay: 2
+    nextSceneId: 2_24
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 2_24
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Adrenalina neutralizuje b\xF3l.^Pod wp\u0142ywem impulsu wyci\u0105gasz
+      n\xF3\u017C z uda i wbijasz go w krta\u0144 Wilsona."
+    afterTextDelay: 2
+    nextSceneId: 2_25
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 2_25
+    currentTextField: {fileID: 1187839866}
+    textAuthor: ' <color=yellow>Martin Hobbs</color>'
+    text: "To za Raya. W imi\u0119 zasad."
+    afterTextDelay: 2
+    nextSceneId: 2_26
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 2_26
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Zostawiasz Charlesa i odje\u017Cd\u017Casz wind\u0105.^Wychodzisz na zewn\u0105trz,
+      gdzie czekaj\u0105 na Ciebie ju\u017C Twoi ludzie.^Misja zako\u0144czona sukcesem."
+    afterTextDelay: 5
+    nextSceneId: 2_27
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 2_27
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Kilka miesi\u0119cy p\xF3\u017Aniej.^Dzi\u0119ki zdobytym przez Ciebie
+      informacjom Ryan i jego badacze zdo\u0142ali wynale\u017A\u0107 lekarstwo.^Szczepienie
+      b\u0119dzie post\u0119powa\u0107 stopniowo. \u015Awiat powoli zaczyna wraca\u0107
+      do normalno\u015Bci. Prze\u017Cyli\u015Bcie trudny okres."
+    afterTextDelay: 2
+    nextSceneId: end
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 286181337}
+          m_MethodName: TurnOffGame
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     soundEvent: {fileID: 0}
     minigame: {fileID: 0}
 --- !u!1 &2006161057

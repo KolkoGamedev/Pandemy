@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LabiryntMovement : MiniGame
 {
-    [SerializeField] private Canvas gameCanvas;
+    [SerializeField] private Canvas gameCanvas = null;
     [SerializeField] private GameObject spawnPoint;
     Vector2 pos;
     bool isClicked = false;
@@ -18,7 +18,7 @@ public class LabiryntMovement : MiniGame
         if (other.name.Equals("EndPoint"))
         {
             isClicked = false;
-            base.FinishGame();
+            GetComponentInParent<Labirynt>().EndGame();
         }
         else
         {

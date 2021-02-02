@@ -56,4 +56,9 @@ public class PostWrittenEvents : MonoBehaviour
             
         
     }
+
+    public void TurnOffGame()
+    {
+        Application.Quit();
+    }
 }

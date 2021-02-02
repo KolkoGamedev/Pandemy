@@ -5,9 +5,9 @@ using Data.Util;
 using UnityEngine;
 
 public class Labirynt : MiniGame
-{    
-    private void Awake()
+{
+    public void EndGame()
     {
-       
+        base.FinishGame();
     }
 }
