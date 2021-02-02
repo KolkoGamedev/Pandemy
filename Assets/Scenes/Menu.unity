@@ -237,7 +237,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: bcf4e43d9b3fd69409bfea40670d3f04, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.61
   m_Pitch: 1
   Loop: 1
@@ -2023,7 +2023,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3feab76898e6a643bc02c263a9a8a8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuSoundtrack: {fileID: 8300000, guid: bcf4e43d9b3fd69409bfea40670d3f04, type: 3}
+  menuSoundtrack: {fileID: 0}
   fogManager: {fileID: 1469532551}
   listOfTypingSounds:
   - {fileID: 8300000, guid: 61c33bc542ea71544a635a14fc06ce8c, type: 3}
@@ -2048,7 +2048,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
