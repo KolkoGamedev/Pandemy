@@ -22,6 +22,9 @@ public class DialogChoices : MonoBehaviour
     public void SetupChoices(string sceneId)
     {
         currentChoice = FindWyborById(sceneId);
+        currentChoice.choiceMade = false;
+        currentChoice.wybor.destinationId = "";
+        
         if (currentChoice.is3Choice)
         {
             setup3.SetActive(true);

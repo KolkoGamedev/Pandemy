@@ -3969,7 +3969,7 @@ MonoBehaviour:
     afterTextDelay: 2
     nextSceneId: 0_8
     wasSkipped: 0
-    overrideDialog: 0
+    overrideDialog: 1
     msgAfterScene: 
     OnSceneFinished:
       m_PersistentCalls:
@@ -3982,7 +3982,7 @@ MonoBehaviour:
     afterTextDelay: 1
     nextSceneId: 0_9
     wasSkipped: 0
-    overrideDialog: 0
+    overrideDialog: 1
     msgAfterScene: 
     OnSceneFinished:
       m_PersistentCalls:
@@ -4554,7 +4554,8 @@ MonoBehaviour:
   - sceneId: 0_43
     currentTextField: {fileID: 1187839866}
     textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
-    text: "B\u0142agam, pomocy! On mnie zabije, niech kto\u015B otworzy, prosz\u0119!^"
+    text: "B\u0142agam, po-po-pomocy! On mnie zabije, niech kto\u015B o-otworzy,
+      prosz\u0119!^"
     afterTextDelay: 2
     nextSceneId: 0_45
     wasSkipped: 0
@@ -4567,7 +4568,8 @@ MonoBehaviour:
   - sceneId: 0_44
     currentTextField: {fileID: 1187839866}
     textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
-    text: "B\u0142agam, pomocy! On mnie zabije, niech kto\u015B otworzy, prosz\u0119!^"
+    text: "B\u0142agam, po-po-pomocy! On mnie zabije, niech kto\u015B o-otworzy,
+      prosz\u0119!^"
     afterTextDelay: 2
     nextSceneId: 0_46
     wasSkipped: 0
@@ -4580,8 +4582,7 @@ MonoBehaviour:
   - sceneId: 0_45
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs</color>
-    text: "Ah.. najwidoczniej nie wystarczy mi wra\u017Ce\u0144 na dzisiaj. Szybkim
-      krokiem podchodzisz do stolika. Zabierasz berett\u0119 i wracasz pod drzwi."
+    text: "Ah.. najwidoczniej nie wystarczy mi wra\u017Ce\u0144 na dzisiaj."
     afterTextDelay: 2
     nextSceneId: 0_47
     wasSkipped: 0
@@ -4677,7 +4678,7 @@ MonoBehaviour:
     currentTextField: {fileID: 998780045}
     textAuthor: 
     text: "Ch\u0142opak chwil\u0119 si\u0119 waha, po czym po\u015Bpiesznym krokiem
-      wchodzi do Twojego domu."
+      wchodzi do twojego domu."
     afterTextDelay: 2
     nextSceneId: 0_53
     wasSkipped: 0
@@ -4704,9 +4705,732 @@ MonoBehaviour:
     text: "Dzi\u0119kuj\u0119.. Na prawd\u0119 dzi\u0119kuj\u0119.. Uratowa\u0142e\u015B
       mi \u017Cycie.."
     afterTextDelay: 2
-    nextSceneId: end
+    nextSceneId: 0_54
     wasSkipped: 0
     overrideDialog: 0
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_54
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Odchodzisz od drzwi. Siadasz na fotelu i z broni\u0105 w gotowo\u015Bci
+      zaczynasz zadawa\u0107 pytania"
+    afterTextDelay: 2
+    nextSceneId: x0_55
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 286181337}
+          m_MethodName: FadeOutTextField
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 998780045}
+            m_ObjectArgumentAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    soundEvent: {fileID: 0}
+  - sceneId: x0_55
+    currentTextField: {fileID: 0}
+    textAuthor: 
+    text: 
+    afterTextDelay: 0
+    nextSceneId: 
+    wasSkipped: 0
+    overrideDialog: 0
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_56_0
+    currentTextField: {fileID: 1187839866}
+    textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
+    text: "Nazywam si\u0119 Johnny, nale\u017C\u0119 do ruchu oporu, jestem jednym
+      z poszukiwaczy."
+    afterTextDelay: 1
+    nextSceneId: x0_55
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_56_1
+    currentTextField: {fileID: 1187839866}
+    textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
+    text: "Nie mam poj\u0119cia. Zacz\u0105\u0142 mnie \u015Bledzi\u0107, gdy wyszed\u0142em
+      z opuszczonej apteki, wygl\u0105da\u0142 na poszukiwacza, ale to nikt z nas."
+    afterTextDelay: 1
+    nextSceneId: x0_55
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_56_2
+    currentTextField: {fileID: 1187839866}
+    textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
+    text: "Chcia\u0142 mi ukra\u015B\u0107 voxium, kt\xF3re uda\u0142o mi si\u0119
+      znale\u017A\u0107."
+    afterTextDelay: 1
+    nextSceneId: 0_57
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_57
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: Voxium?
+    afterTextDelay: 2
+    nextSceneId: 0_58
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_58
+    currentTextField: {fileID: 1187839866}
+    textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
+    text: "Sk\u0142adnik, kt\xF3ry jest potrzebny do bada\u0144 nad le-lekarstwem."
+    afterTextDelay: 2
+    nextSceneId: 0_59
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_59
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: Pracujecie nad lekarstwem?
+    afterTextDelay: 2
+    nextSceneId: 0_60
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_60
+    currentTextField: {fileID: 1187839866}
+    textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
+    text: "Musimy dzia\u0142a\u0107 na w\u0142asn\u0105 r\u0119k\u0119, chyba nie
+      s\u0105dzisz, \u017Ce dostaniemy je od rz\u0105du?"
+    afterTextDelay: 4
+    nextSceneId: 0_61
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_61
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Czy Ty przypadkiem nie jeste\u015B z Mayflower?"
+    afterTextDelay: 2
+    nextSceneId: 0_62
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_62
+    currentTextField: {fileID: 1187839866}
+    textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
+    text: "T-Tak, sk\u0105d wiedzia\u0142e\u015B?"
+    afterTextDelay: 2
+    nextSceneId: 0_63
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_63
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Widzia\u0142em komunikat, kt\xF3ry nadajecie w telewizji i rozpozna\u0142em
+      kotwic\u0119 na twoim ramieniu."
+    afterTextDelay: 2
+    nextSceneId: 0_64
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_64
+    currentTextField: {fileID: 1187839866}
+    textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
+    text: "Spostrzegawczy jeste\u015B.^Wa\u017Cna cecha poszukiwaczy, kt\xF3rych
+      Ryan teraz potrzebuje."
+    afterTextDelay: 2
+    nextSceneId: 0_65
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_65
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: Ryan?
+    afterTextDelay: 2
+    nextSceneId: 0_66
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_66
+    currentTextField: {fileID: 1187839866}
+    textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
+    text: "Nasz przyw\xF3dca. To go widzia\u0142e\u015B w telewizji."
+    afterTextDelay: 2
+    nextSceneId: 0_67
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_67
+    currentTextField: {fileID: 1187839866}
+    textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
+    text: "Nasz przyw\xF3dca.^To go widzia\u0142e\u015B w telewizji.^Mog\u0119 Ci\u0119
+      do niego zaprowadzi\u0107."
+    afterTextDelay: 2
+    nextSceneId: 0_68
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_68
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Teraz jest zbyt niebezpiecznie, \u017Ceby wychodzi\u0107.^Poczekajmy do
+      \u015Bwitu, potem mnie do niego zaprowadzisz. Rozgo\u015B\u0107 si\u0119."
+    afterTextDelay: 2
+    nextSceneId: 0_69
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_69
+    currentTextField: {fileID: 1187839866}
+    textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
+    text: "Dz-Dzi\u0119kuj\u0119."
+    afterTextDelay: 2
+    nextSceneId: 0_70
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 0_70
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Po przespanej nocy, postanawiacie wyruszy\u0107. Bierzecie prowiant na
+      drog\u0119 i wychodzicie z domu."
+    afterTextDelay: 2
+    nextSceneId: 1_0
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_0
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "***Minigra, kt\xF3rej celem jest dotarcie do obozu***"
+    afterTextDelay: 2
+    nextSceneId: 1_1
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_1
+    currentTextField: {fileID: 1187839866}
+    textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
+    text: "Ju\u017C prawie jeste\u015Bmy."
+    afterTextDelay: 2
+    nextSceneId: 1_2
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_2
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Gdzie? Na z\u0142omowisku?"
+    afterTextDelay: 2
+    nextSceneId: 1_3
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_3
+    currentTextField: {fileID: 1187839866}
+    textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
+    text: Patrz.
+    afterTextDelay: 2
+    nextSceneId: 1_4
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_4
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Ch\u0142opak rozglada si\u0119 dooko\u0142a, podchodzi do pobliskiego
+      kontenera i puka 3 razy."
+    afterTextDelay: 4
+    nextSceneId: 1_5
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_5
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Po chwili jedna ze \u015Bcian kontenera si\u0119 odsuwa, a za ni\u0105
+      ukazuje si\u0119 m\u0119\u017Cczyzna."
+    afterTextDelay: 2
+    nextSceneId: 1_6
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_6
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=green>Wartownik</color>
+    text: "Johnny! Martwili\u015Bmy si\u0119, \u017Ce ju\u017C nie wr\xF3cisz."
+    afterTextDelay: 2
+    nextSceneId: 1_7
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_7
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=green>Wartownik</color>
+    text: "Jasne, wchod\u017Acie. Jest u siebie."
+    afterTextDelay: 2
+    nextSceneId: 1_8
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_8
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Zostajesz wpuszczony do obozu Mayflower.^Nie wyobra\u017Ca\u0142e\u015B
+      sobie, \u017Ce ich siedziba b\u0119dzie znajdowa\u0107 si\u0119 na z\u0142omowisku,
+      aczkolwiek przyznajesz, \u017Ce nie by\u0142o \u0142atwo znale\u017A\u0107
+      tego miejsca. Dobra kryj\xF3wka."
+    afterTextDelay: 2
+    nextSceneId: 1_9
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_9
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Wsz\u0119dzie stoj\u0105 prowizoryczne pomieszczenia stworzone z p\u0142yt
+      metalu zwi\u0105zanych linami.^Na samym \u015Brodku wida\u0107 wyr\xF3\u017Cniaj\u0105cy
+      si\u0119 budynek, pewnie w nim przesiaduje Ryan.^Udajecie si\u0119 do niego."
+    afterTextDelay: 2
+    nextSceneId: 1_10
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_10
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Wchodzicie do pomieszczenia przez p\u0142aty materia\u0142u. Na \u015Brodku
+      znajduje si\u0119 wielki, okr\u0105g\u0142y st\xF3\u0142 a za nim, na krze\u015Ble
+      siedzi Ryan. "
+    afterTextDelay: 2
+    nextSceneId: 1_11
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_11
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Dobrze zbudowany, czarnosk\xF3ry m\u0119\u017Cczyzna z wieloma bliznami
+      na ciele. Nie dziwisz si\u0119, \u017Ce to w\u0142a\u015Bnie on jest przyw\xF3dc\u0105."
+    afterTextDelay: 2
+    nextSceneId: 1_12
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_12
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#bf7cbe>Johnny</color>
+    text: "Cze\u015B\u0107 Ryan. Przyprowadzi\u0142em Ci kogo\u015B, kto chce z Tob\u0105
+      porozmawia\u0107"
+    afterTextDelay: 2
+    nextSceneId: 1_13
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_13
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#0a731f>Ryan Bridges</color>
+    text: Tak? kto to jest?
+    afterTextDelay: 2
+    nextSceneId: 1_14
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_14
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: Martin. Martin Hobbs.
+    afterTextDelay: 2
+    nextSceneId: 1_15
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_15
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#0a731f>Ryan Bridges</color>
+    text: Tak? kto to jest?
+    afterTextDelay: 2
+    nextSceneId: 1_16
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_16
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#bf7cbe>Johnny</color>
+    text: "Cz\u0142owiek, kt\xF3ry uratowa\u0142 mi \u017Cycie!"
+    afterTextDelay: 2
+    nextSceneId: 1_17
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_17
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#0a731f>Ryan Bridges</color>
+    text: "W takim razie z mi\u0142\u0105 ch\u0119ci\u0105 go wys\u0142ucham."
+    afterTextDelay: 2
+    nextSceneId: 1_18
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_18
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Widzia\u0142em wasz\u0105 transmisj\u0119.^Rozwa\u017Cam do\u0142\u0105czenie
+      do was.^Powiedzmy, \u017Ce mam swoje powody, mo\u017Cemy sobie wzajemnie pom\xF3c.^"
+    afterTextDelay: 2
+    nextSceneId: 1_19
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_19
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#0a731f>Ryan Bridges</color>
+    text: "Mhm, a co jeste\u015B w stanie nam zaoferowa\u0107?"
+    afterTextDelay: 2
+    nextSceneId: 1_20
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_20
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "10 lat s\u0142u\u017Cy\u0142em w wojsku i wiele przeszed\u0142em.^Znam
+      si\u0119 na broni, walce, materia\u0142ach wybuchowych oraz taktyce."
+    afterTextDelay: 2
+    nextSceneId: 1_21
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_21
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#0a731f>Ryan Bridges</color>
+    text: "Dobra, to brzmi nie\u017Ale.^Sprawd\u017Amy co potrafisz."
+    afterTextDelay: 2
+    nextSceneId: 1_22
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_22
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Ryan wstaje z krzes\u0142a i zaczyna chodzi\u0107 dooko\u0142a sto\u0142u.
+      Podpala cygaro."
+    afterTextDelay: 2
+    nextSceneId: 1_23
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_23
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#0a731f>Ryan Bridges</color>
+    text: "S\u0142uchaj.^ Mamy wystarczaj\u0105co ludzi, \u017Ceby podj\u0105\u0107
+      szturm na budynek rz\u0105dowy. Jednak nawet w pozytywnym scenariuszu, gdy
+      przedostaniemy si\u0119 przez wojska zewn\u0119trzne, to bez materia\u0142\xF3w
+      wybuchowych nie dostaniemy si\u0119 do \u015Brodka.^Ca\u0142y budynek jest
+      zabezpieczony tytanowymi p\u0142ytami. Okna i drzwi s\u0105 zabudowane.^"
+    afterTextDelay: 2
+    nextSceneId: 1_24
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_24
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#0a731f>Ryan Bridges</color>
+    text: "Palniki si\u0119 przez to nie przepal\u0105.^Pozostaj\u0105 materia\u0142y
+      wybuchowe.^Mamy ich troch\u0119, ale nie jestem pewny czy to wystarczy.^Skoro
+      znasz si\u0119 na tym to wybierz si\u0119 z Johnnym i spr\xF3buj je za\u0142atwi\u0107."
+    afterTextDelay: 2
+    nextSceneId: 1_25
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_25
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Zobaczymy co da si\u0119 zrobi\u0107."
+    afterTextDelay: 2
+    nextSceneId: 1_26
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_26
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Wychodzicie z pomieszczenia Ryana.^ Stajecie przed jego drzwiami i zaczynacie
+      si\u0119 zastanawia\u0107, gdzie mo\u017Cecie znale\u017A\u0107 potrzebne materia\u0142y."
+    afterTextDelay: 2
+    nextSceneId: 1_27
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_27
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#bf7cbe>Johnny</color>
+    text: "Masz pomys\u0142 gdzie mo\u017Cemy znale\u017A\u0107 potrzebne materia\u0142y?"
+    afterTextDelay: 2
+    nextSceneId: x1_28
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: x1_28
+    currentTextField: {fileID: 0}
+    textAuthor: 
+    text: 
+    afterTextDelay: 0
+    nextSceneId: 
+    wasSkipped: 0
+    overrideDialog: 0
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_29_0
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "W mie\u015Bcie znajduje si\u0119 opuszczony komisariat, my\u015Bl\u0119,
+      \u017Ce to dobre miejsce, od kt\xF3rego mo\u017Cemy zacz\u0105\u0107 poszukiwania."
+    afterTextDelay: 2
+    nextSceneId: 1_30
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_29_1
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "W mie\u015Bcie znajduje si\u0119 opuszczony sztab wojskowy, mo\u017Ce
+      by\u0107 tam niebezpiecznie, ale w po\u015Bpiechu mo\u017Ce nie zabrali wszystkiego."
+    afterTextDelay: 2
+    nextSceneId: 
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_30_0
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Postanawiacie najpierw wyruszy\u0107 na komisariat. Mija oko\u0142o godzina,
+      a przed waszymi oczami ukazuje si\u0119 komisariat.^Wieje pustkami, powoli
+      zbli\u017Cacie si\u0119 do drzwi wejsciowych."
+    afterTextDelay: 2
+    nextSceneId: 
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+  - sceneId: 1_29_1
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "W mie\u015Bcie znajduje si\u0119 opuszczony sztab wojskowy, mo\u017Ce
+      by\u0107 tam niebezpiecznie, ale w po\u015Bpiechu mo\u017Ce nie zabrali wszystkiego."
+    afterTextDelay: 2
+    nextSceneId: 
+    wasSkipped: 0
+    overrideDialog: 1
     msgAfterScene: 
     OnSceneFinished:
       m_PersistentCalls:
@@ -5268,6 +5992,37 @@ MonoBehaviour:
       - 0_39_2
       destinationId: 
     is3Choice: 1
+    choiceMade: 0
+  - sceneId: x0_55
+    wybor:
+      choicesFields:
+      - {fileID: 605140501}
+      - {fileID: 953791085}
+      - {fileID: 589773830}
+      choices:
+      - "Kim jeste\u015B?"
+      - "Co to by\u0142 za jeden?"
+      - "Czego on od Ciebie chcia\u0142?"
+      destination:
+      - 0_56_0
+      - 0_56_1
+      - 0_56_2
+      destinationId: 
+    is3Choice: 1
+    choiceMade: 0
+  - sceneId: x1_28
+    wybor:
+      choicesFields:
+      - {fileID: 1825331268}
+      - {fileID: 2083552076}
+      choices:
+      - Komisariat
+      - Sztab wojskowy
+      destination:
+      - 1_29_0
+      - 1_29_1
+      destinationId: 
+    is3Choice: 0
     choiceMade: 0
   setup3: {fileID: 682573633}
   setup2: {fileID: 1324003310}

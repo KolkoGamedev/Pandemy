@@ -23,15 +23,27 @@ public class DialogSystem : MonoBehaviour
     private TypeWriter _tw;
     private string _sceneId = "0_0";
     private DialogScene currentScene;
-
+    private bool loaded = false;
     private void Awake()
     {
         _tw = FindObjectOfType<TypeWriter>();
         LevelManager.GameStarted += StartGame;
+        loaded = false;
+        
     }
 
     public DialogScene FindSceneById(string id)
     {
+        /*
+        if (PlayerPrefs.HasKey("Saved"))
+        {
+            id = PlayerPrefs.GetString("Saved");
+        }
+        else
+        {
+            PlayerPrefs.SetString("Saved", id);
+        }*/
+        
         for (int i = 0; i < scenariusz.Count; i++)
         {
             if (scenariusz[i].sceneId == id)
