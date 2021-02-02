@@ -3801,8 +3801,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -200, y: -35}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -250, y: -35}
+  m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1825331268
 MonoBehaviour:
@@ -5297,7 +5297,7 @@ MonoBehaviour:
     currentTextField: {fileID: 1187839866}
     textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
     text: "Spostrzegawczy jeste\u015B.^Wa\u017Cna cecha poszukiwaczy, kt\xF3rych
-      Ryan teraz potrzebuje."
+      Ryan teraz p-potrzebuje."
     afterTextDelay: 2
     nextSceneId: 0_65
     wasSkipped: 0
@@ -5325,7 +5325,7 @@ MonoBehaviour:
   - sceneId: 0_66
     currentTextField: {fileID: 1187839866}
     textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
-    text: "Nasz przyw\xF3dca. To go widzia\u0142e\u015B w telewizji."
+    text: "Nasz p-przyw\xF3dca. To go widzia\u0142e\u015B w telewizji."
     afterTextDelay: 2
     nextSceneId: 0_67
     wasSkipped: 0
@@ -5339,8 +5339,8 @@ MonoBehaviour:
   - sceneId: 0_67
     currentTextField: {fileID: 1187839866}
     textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
-    text: "Nasz przyw\xF3dca.^To go widzia\u0142e\u015B w telewizji.^Mog\u0119 Ci\u0119
-      do niego zaprowadzi\u0107."
+    text: "Nasz p-przyw\xF3dca.^To go widzia\u0142e\u015B w telewizji.^Mog\u0119
+      Ci\u0119 do niego zaprowadzi\u0107."
     afterTextDelay: 2
     nextSceneId: 0_68
     wasSkipped: 0
@@ -5423,7 +5423,7 @@ MonoBehaviour:
   - sceneId: 1_1
     currentTextField: {fileID: 1187839866}
     textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
-    text: "Ju\u017C prawie jeste\u015Bmy."
+    text: "Ju\u017C p-prawie jeste\u015Bmy."
     afterTextDelay: 2
     nextSceneId: 1_2
     wasSkipped: 0
@@ -5451,7 +5451,7 @@ MonoBehaviour:
   - sceneId: 1_3
     currentTextField: {fileID: 1187839866}
     textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
-    text: Patrz.
+    text: P-patrz.
     afterTextDelay: 2
     nextSceneId: 1_4
     wasSkipped: 0
@@ -5489,7 +5489,18 @@ MonoBehaviour:
     msgAfterScene: 
     OnSceneFinished:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 286181337}
+          m_MethodName: FadeOutTextField
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 998780045}
+            m_ObjectArgumentAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     soundEvent: {fileID: 0}
     minigame: {fileID: 0}
   - sceneId: 1_6
@@ -5508,8 +5519,9 @@ MonoBehaviour:
     minigame: {fileID: 0}
   - sceneId: 1_7
     currentTextField: {fileID: 1187839866}
-    textAuthor: <color=green>Wartownik</color>
-    text: "Jasne, wchod\u017Acie. Jest u siebie."
+    textAuthor: <#bf7cbe>Johnny</color>
+    text: "Wszystko w p-p-porz\u0105dku. Mam ze sob\u0105 nowego, przyszli\u015Bmy
+      do Ryana."
     afterTextDelay: 2
     nextSceneId: 1_8
     wasSkipped: 0
@@ -5793,8 +5805,8 @@ MonoBehaviour:
   - sceneId: 1_26
     currentTextField: {fileID: 998780045}
     textAuthor: 
-    text: "Wychodzicie z pomieszczenia Ryana.^ Stajecie przed jego drzwiami i zaczynacie
-      si\u0119 zastanawia\u0107, gdzie mo\u017Cecie znale\u017A\u0107 potrzebne materia\u0142y."
+    text: "Wychodzicie z pomieszczenia Ryana.^ Stajecie przed jego drzwiami i zastanawiacie
+      si\u0119, gdzie mo\u017Cecie zacz\u0105\u0107 poszukiwania."
     afterTextDelay: 2
     nextSceneId: 1_27
     wasSkipped: 0
@@ -5863,12 +5875,129 @@ MonoBehaviour:
         m_Calls: []
     soundEvent: {fileID: 0}
     minigame: {fileID: 0}
-  - sceneId: 1_30_0
+  - sceneId: 1_30
     currentTextField: {fileID: 998780045}
     textAuthor: 
     text: "Postanawiacie najpierw wyruszy\u0107 na komisariat. Mija oko\u0142o godzina,
-      a przed waszymi oczami ukazuje si\u0119 komisariat.^Wieje pustkami, powoli
+      a przed waszymi oczami ukazuje si\u0119 posterunek policji.^Wieje pustkami.^Powoli
       zbli\u017Cacie si\u0119 do drzwi wejsciowych."
+    afterTextDelay: 2
+    nextSceneId: 1_31
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_31
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Wchodzicie do \u015Brodka, drzwi by\u0142y otwarte, wida\u0107, \u017Ce
+      kto\u015B wychodzi\u0142 w po\u015Bpiechu.^Li\u015Bcie, porozrzucane krzes\u0142a
+      i sto\u0142y, stare gazety, szcz\u0105tki zwierz\u0105t. Wszystko to jest widocznie
+      od razu po wej\u015Bciu do komisariatu."
+    afterTextDelay: 2
+    nextSceneId: 1_32
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_32
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Chyba nie jeste\u015Bmy pierwszymi, kt\xF3rzy tu czego\u015B szukaj\u0105."
+    afterTextDelay: 2
+    nextSceneId: 1_33
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_33
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#bf7cbe>Johnny</color>
+    text: "Lepiej uwa\u017Cajmy, kto\u015B d-dalej mo\u017Ce t-tu by\u0107."
+    afterTextDelay: 2
+    nextSceneId: 1_34
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_34
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Szukajmy zbrojowni. Je\u017Celi mia\u0142yby si\u0119 znajdowa\u0107 tu
+      jakie\u015B materia\u0142y wybuchowe to tylko tam."
+    afterTextDelay: 2
+    nextSceneId: 1_35
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_35
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Sp\u0119dzacie dobre 20 minut szukaj\u0105c zbrojowni. Obeszli\u015Bcie
+      prawie ca\u0142y komisariat, gdy nagle s\u0142yszycie ha\u0142as."
+    afterTextDelay: 2
+    nextSceneId: 1_36
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_36
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#bf7cbe>Johnny</color>
+    text: "S-s\u0142ysza\u0142e\u015B to?"
+    afterTextDelay: 1
+    nextSceneId: 1_37
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_37
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "S\u0142ysza\u0142em. Chyba mamy towarzystwo."
+    afterTextDelay: 2
+    nextSceneId: x1_38
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: x1_38
+    currentTextField: {fileID: 0}
+    textAuthor: 
+    text: 
     afterTextDelay: 2
     nextSceneId: 
     wasSkipped: 0
@@ -5879,13 +6008,205 @@ MonoBehaviour:
         m_Calls: []
     soundEvent: {fileID: 0}
     minigame: {fileID: 0}
-  - sceneId: 1_29_1
+  - sceneId: 1_39_0
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs</color>
-    text: "W mie\u015Bcie znajduje si\u0119 opuszczony sztab wojskowy, mo\u017Ce
-      by\u0107 tam niebezpiecznie, ale w po\u015Bpiechu mo\u017Ce nie zabrali wszystkiego."
+    text: "Poczekaj tutaj, sprawdz\u0119 to."
     afterTextDelay: 2
-    nextSceneId: 
+    nextSceneId: 1_43
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_39_1
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Zmywajmy si\u0119 st\u0105d. Nie wiadomo kto lub co to jest.^Lepiej nie
+      ryzykowa\u0107."
+    afterTextDelay: 2
+    nextSceneId: 1_40
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_40
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "W po\u015Bpiechu opuszczacie budynek. Nie macie poj\u0119cia co tam si\u0119
+      znajduje, postanowili\u015Bcie nie ryzykowa\u0107.^Siadacie na pobliskim przystanku
+      autobusowym by obmy\u015Bli\u0107 dalszy plan."
+    afterTextDelay: 2
+    nextSceneId: 1_41
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_41
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#bf7cbe>Johnny</color>
+    text: To co teraz sz-szefie?
+    afterTextDelay: 2
+    nextSceneId: 1_42
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_42
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Mam jeszcze jeden pomys\u0142."
+    afterTextDelay: 2
+    nextSceneId: 1_29_1
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_43
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#bf7cbe>Johnny</color>
+    text: "Nie ma m-mowy, id\u0119 z T-tob\u0105."
+    afterTextDelay: 2
+    nextSceneId: 1_44
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_44
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Razem udajecie si\u0119 do pomieszczenia z kt\xF3rego dochodzi ha\u0142as.^Zbli\u017Caj\u0105c
+      si\u0119 s\u0142yszycie odg\u0142osy t\u0142uczonego szk\u0142a. Okazuje si\u0119,
+      \u017Ce d\u017Awi\u0119ki dochodz\u0105 z kantyny."
+    afterTextDelay: 2
+    nextSceneId: 1_45
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_45
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Otwieracie drzwi i zauwa\u017Cacie, \u017Ce co\u015B porusza si\u0119
+      bardzo zwinnie po rega\u0142ach kuchni.^Po chwili wskakuj\u0119 na wysok\u0105
+      p\xF3\u0142k\u0119, zatrzymuje si\u0119 i obserwuje was. \u0179\xF3\u0142te
+      pionowe \u017Arenice wyr\xF3\u017Cniaj\u0105 si\u0119 z ciemno\u015Bci panuj\u0105cej
+      w pomieszczeniu."
+    afterTextDelay: 2
+    nextSceneId: 1_46
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_46
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#bf7cbe>Johnny</color>
+    text: K-kot?
+    afterTextDelay: 2
+    nextSceneId: 1_47
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_47
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Ale nas wystraszy\u0142e\u015B ma\u0142y."
+    afterTextDelay: 2
+    nextSceneId: 1_48
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_48
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Kot zaczyna si\u0119 pr\u0119\u017Cy\u0107 i po chwili wydaje g\u0142o\u015Bny
+      syk."
+    afterTextDelay: 2
+    nextSceneId: 1_49
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_49
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <color=yellow>Martin Hobbs</color>
+    text: "Lepiej zostawmy go w spokoju. Wystarczy mi blizn od pazur\xF3w."
+    afterTextDelay: 2
+    nextSceneId: 1_50
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_50
+    currentTextField: {fileID: 998780045}
+    textAuthor: 
+    text: "Opuszczacie budynek z pustymi r\u0119koma. Udajecie si\u0119 na pobliski
+      przystanek by obmy\u015Bli\u0107 dalszy plan."
+    afterTextDelay: 2
+    nextSceneId: 1_41
+    wasSkipped: 0
+    overrideDialog: 1
+    msgAfterScene: 
+    OnSceneFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
+  - sceneId: 1_47
+    currentTextField: {fileID: 1187839866}
+    textAuthor: <#bf7cbe>Johnny</color>
+    text: "Chyba nas nie p-polubi\u0142."
+    afterTextDelay: 2
+    nextSceneId: 1_47
     wasSkipped: 0
     overrideDialog: 1
     msgAfterScene: 
@@ -6233,8 +6554,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 200, y: -35}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 250, y: -35}
+  m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2083552076
 MonoBehaviour:
@@ -6523,6 +6844,20 @@ MonoBehaviour:
       destination:
       - 1_29_0
       - 1_29_1
+      destinationId: 
+    is3Choice: 0
+    choiceMade: 0
+  - sceneId: x1_38
+    wybor:
+      choicesFields:
+      - {fileID: 1825331268}
+      - {fileID: 2083552076}
+      choices:
+      - "Sprawd\u017A sk\u0105d dochodzi d\u017Awi\u0119k"
+      - Uciekaj z komisariatu
+      destination:
+      - 1_39_0
+      - 1_39_1
       destinationId: 
     is3Choice: 0
     choiceMade: 0
