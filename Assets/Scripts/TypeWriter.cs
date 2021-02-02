@@ -40,7 +40,7 @@ public class TypeWriter : MonoBehaviour
 
     private void DialogSystemOnDialogSkipped(DialogScene dialogScene)
     {
-        if (!dialogScene.wasSkipped)
+        if (!dialogScene.wasSkipped && !dialogScene.nextSceneId.StartsWith("x") && !dialogScene.sceneId.StartsWith("x"))
         {
             StopAllCoroutines();
             PostWrittenEvents.Instance.StopAllCoroutines();

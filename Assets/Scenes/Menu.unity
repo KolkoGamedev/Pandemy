@@ -742,6 +742,86 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20aac5a5fbf78954896ad7f02c9cccf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &295889935
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 295889936}
+  - component: {fileID: 295889938}
+  - component: {fileID: 295889937}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &295889936
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295889935}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 591933844}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &295889937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295889935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Finish Game
+
+'
+--- !u!222 &295889938
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295889935}
+  m_CullTransparentMesh: 0
 --- !u!1 &457632036
 GameObject:
   m_ObjectHideFlags: 0
@@ -1276,6 +1356,136 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &591933843
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 591933844}
+  - component: {fileID: 591933847}
+  - component: {fileID: 591933846}
+  - component: {fileID: 591933845}
+  m_Layer: 5
+  m_Name: Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &591933844
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591933843}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 295889936}
+  m_Father: {fileID: 1539198105}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &591933845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591933843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 591933846}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1539198108}
+        m_MethodName: FinishGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &591933846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591933843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &591933847
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591933843}
+  m_CullTransparentMesh: 0
 --- !u!1 &605140499
 GameObject:
   m_ObjectHideFlags: 0
@@ -3170,6 +3380,94 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fogRenderer: {fileID: 1431006721}
+--- !u!1 &1539198104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1539198105}
+  - component: {fileID: 1539198107}
+  - component: {fileID: 1539198106}
+  - component: {fileID: 1539198108}
+  m_Layer: 5
+  m_Name: Labirynt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1539198105
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539198104}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 591933844}
+  m_Father: {fileID: 1727499827}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1000, y: 800}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1539198106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539198104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.4339623, g: 0.4339623, b: 0.4339623, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1539198107
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539198104}
+  m_CullTransparentMesh: 0
+--- !u!114 &1539198108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539198104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb072ac2d3c41644488cec8031073bd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1549655939
 GameObject:
   m_ObjectHideFlags: 0
@@ -3327,6 +3625,42 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549655939}
   m_CullTransparentMesh: 0
+--- !u!1 &1727499826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1727499827}
+  m_Layer: 5
+  m_Name: MiniGames
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1727499827
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727499826}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1539198105}
+  m_Father: {fileID: 1825161065}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1825161061
 GameObject:
   m_ObjectHideFlags: 0
@@ -3423,6 +3757,7 @@ RectTransform:
   - {fileID: 998780044}
   - {fileID: 1187839865}
   - {fileID: 2114649709}
+  - {fileID: 1727499827}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3823,6 +4158,7 @@ MonoBehaviour:
   narratorTextField: {fileID: 998780045}
   dialogTextField: {fileID: 1187839866}
   dialogChoices: {fileID: 2114649710}
+  _minigamesManager: {fileID: 2024360206}
   scenariusz:
   - sceneId: 0_0
     currentTextField: {fileID: 998780045}
@@ -3843,6 +4179,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_1
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -3862,6 +4199,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_2
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -3889,6 +4227,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_3
     currentTextField: {fileID: 1187839866}
     textAuthor: <#b5d1ff>Prezenter</color>
@@ -3903,6 +4242,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_4
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -3929,6 +4269,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_5
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=white>Mayflower</color>
@@ -3946,6 +4287,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_6
     currentTextField: {fileID: 1187839866}
     textAuthor: 0Mayflower
@@ -3960,6 +4302,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_7
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -3975,6 +4318,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_8
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -3999,6 +4343,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_9
     currentTextField: {fileID: 1187839866}
     textAuthor: <#b5d1ff>Prezenter</color>
@@ -4012,6 +4357,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_10
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4026,6 +4372,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_11
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs (Ja)</color>
@@ -4039,6 +4386,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_12
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4054,6 +4402,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_13
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs (Ja)</color>
@@ -4067,6 +4416,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: x0_14
     currentTextField: {fileID: 0}
     textAuthor: 
@@ -4080,6 +4430,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_15_1
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4095,6 +4446,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_15_2
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4109,6 +4461,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_16
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4124,6 +4477,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_17
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=red>gen. Charles Wilson</color>
@@ -4140,6 +4494,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_18
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4165,6 +4520,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_19
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4179,6 +4535,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_20
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=green>Charles Wilson</color>
@@ -4193,6 +4550,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_21
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4207,6 +4565,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_22
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs</color>
@@ -4220,6 +4579,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_23
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=green>Charles Wilson</color>
@@ -4233,6 +4593,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_24
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs</color>
@@ -4246,6 +4607,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_25
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4260,6 +4622,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_26
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4273,6 +4636,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_27
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=red>Charles Wilson</color>
@@ -4286,6 +4650,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_28
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4300,6 +4665,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_29
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4315,6 +4681,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_30
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4329,6 +4696,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: x0_31
     currentTextField: {fileID: 0}
     textAuthor: 
@@ -4342,6 +4710,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_32_1
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4357,6 +4726,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_32_2
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4371,6 +4741,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_33
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs</color>
@@ -4395,6 +4766,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_34
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4411,6 +4783,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_35
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4425,6 +4798,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_36
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4440,6 +4814,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_37
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4454,6 +4829,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: x0_38
     currentTextField: {fileID: 0}
     textAuthor: 
@@ -4467,6 +4843,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_39_0
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4481,6 +4858,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_39_1
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4495,6 +4873,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_39_2
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4509,6 +4888,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_40
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4523,6 +4903,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_41
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4537,6 +4918,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_42
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4551,6 +4933,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_43
     currentTextField: {fileID: 1187839866}
     textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
@@ -4565,6 +4948,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_44
     currentTextField: {fileID: 1187839866}
     textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
@@ -4579,6 +4963,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_45
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs</color>
@@ -4592,6 +4977,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_46
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs</color>
@@ -4605,6 +4991,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_47
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs</color>
@@ -4618,6 +5005,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_48
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs</color>
@@ -4631,6 +5019,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_49
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4646,6 +5035,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_50
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4661,6 +5051,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_51
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs</color>
@@ -4674,6 +5065,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_52
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4699,6 +5091,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_53
     currentTextField: {fileID: 1187839866}
     textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
@@ -4713,6 +5106,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_54
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -4738,6 +5132,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: x0_55
     currentTextField: {fileID: 0}
     textAuthor: 
@@ -4751,6 +5146,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_56_0
     currentTextField: {fileID: 1187839866}
     textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
@@ -4765,6 +5161,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_56_1
     currentTextField: {fileID: 1187839866}
     textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
@@ -4779,6 +5176,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_56_2
     currentTextField: {fileID: 1187839866}
     textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
@@ -4793,6 +5191,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_57
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs</color>
@@ -4806,6 +5205,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_58
     currentTextField: {fileID: 1187839866}
     textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
@@ -4819,6 +5219,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_59
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs</color>
@@ -4832,6 +5233,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_60
     currentTextField: {fileID: 1187839866}
     textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
@@ -4846,6 +5248,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_61
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs</color>
@@ -4859,6 +5262,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_62
     currentTextField: {fileID: 1187839866}
     textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
@@ -4872,6 +5276,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_63
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs</color>
@@ -4886,6 +5291,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_64
     currentTextField: {fileID: 1187839866}
     textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
@@ -4900,6 +5306,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_65
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs</color>
@@ -4913,6 +5320,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_66
     currentTextField: {fileID: 1187839866}
     textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
@@ -4926,6 +5334,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_67
     currentTextField: {fileID: 1187839866}
     textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
@@ -4940,6 +5349,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_68
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs</color>
@@ -4954,6 +5364,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_69
     currentTextField: {fileID: 1187839866}
     textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
@@ -4967,22 +5378,35 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 0_70
     currentTextField: {fileID: 998780045}
     textAuthor: 
     text: "Po przespanej nocy, postanawiacie wyruszy\u0107. Bierzecie prowiant na
       drog\u0119 i wychodzicie z domu."
     afterTextDelay: 2
-    nextSceneId: 1_0
+    nextSceneId: m1_0
     wasSkipped: 0
     overrideDialog: 1
     msgAfterScene: 
     OnSceneFinished:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 286181337}
+          m_MethodName: FadeOutTextField
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 998780045}
+            m_ObjectArgumentAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     soundEvent: {fileID: 0}
-  - sceneId: 1_0
-    currentTextField: {fileID: 998780045}
+    minigame: {fileID: 0}
+  - sceneId: m1_0
+    currentTextField: {fileID: 0}
     textAuthor: 
     text: "***Minigra, kt\xF3rej celem jest dotarcie do obozu***"
     afterTextDelay: 2
@@ -4994,6 +5418,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 1539198104}
   - sceneId: 1_1
     currentTextField: {fileID: 1187839866}
     textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
@@ -5007,6 +5432,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_2
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs</color>
@@ -5020,6 +5446,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_3
     currentTextField: {fileID: 1187839866}
     textAuthor: "<#bf7cbe>Ch\u0142opak</color>"
@@ -5033,6 +5460,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_4
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -5047,6 +5475,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_5
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -5061,6 +5490,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_6
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=green>Wartownik</color>
@@ -5074,6 +5504,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_7
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=green>Wartownik</color>
@@ -5087,6 +5518,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_8
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -5103,6 +5535,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_9
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -5118,6 +5551,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_10
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -5133,6 +5567,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_11
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -5147,6 +5582,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_12
     currentTextField: {fileID: 1187839866}
     textAuthor: <#bf7cbe>Johnny</color>
@@ -5161,6 +5597,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_13
     currentTextField: {fileID: 1187839866}
     textAuthor: <#0a731f>Ryan Bridges</color>
@@ -5174,6 +5611,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_14
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs</color>
@@ -5187,6 +5625,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_15
     currentTextField: {fileID: 1187839866}
     textAuthor: <#0a731f>Ryan Bridges</color>
@@ -5200,6 +5639,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_16
     currentTextField: {fileID: 1187839866}
     textAuthor: <#bf7cbe>Johnny</color>
@@ -5213,6 +5653,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_17
     currentTextField: {fileID: 1187839866}
     textAuthor: <#0a731f>Ryan Bridges</color>
@@ -5226,6 +5667,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_18
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs</color>
@@ -5240,6 +5682,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_19
     currentTextField: {fileID: 1187839866}
     textAuthor: <#0a731f>Ryan Bridges</color>
@@ -5253,6 +5696,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_20
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs</color>
@@ -5267,6 +5711,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_21
     currentTextField: {fileID: 1187839866}
     textAuthor: <#0a731f>Ryan Bridges</color>
@@ -5280,6 +5725,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_22
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -5294,6 +5740,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_23
     currentTextField: {fileID: 1187839866}
     textAuthor: <#0a731f>Ryan Bridges</color>
@@ -5311,6 +5758,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_24
     currentTextField: {fileID: 1187839866}
     textAuthor: <#0a731f>Ryan Bridges</color>
@@ -5326,6 +5774,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_25
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs</color>
@@ -5339,6 +5788,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_26
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -5353,6 +5803,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_27
     currentTextField: {fileID: 1187839866}
     textAuthor: <#bf7cbe>Johnny</color>
@@ -5366,6 +5817,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: x1_28
     currentTextField: {fileID: 0}
     textAuthor: 
@@ -5379,6 +5831,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_29_0
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs</color>
@@ -5393,6 +5846,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_29_1
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs</color>
@@ -5407,6 +5861,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_30_0
     currentTextField: {fileID: 998780045}
     textAuthor: 
@@ -5422,6 +5877,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
   - sceneId: 1_29_1
     currentTextField: {fileID: 1187839866}
     textAuthor: <color=yellow>Martin Hobbs</color>
@@ -5436,6 +5892,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     soundEvent: {fileID: 0}
+    minigame: {fileID: 0}
 --- !u!1 &2006161057
 GameObject:
   m_ObjectHideFlags: 0
@@ -5539,6 +5996,50 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &2024360204
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2024360205}
+  - component: {fileID: 2024360206}
+  m_Layer: 0
+  m_Name: MinigamesManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2024360205
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024360204}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0029577545, y: 0.016510874, z: 15.069824}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2024360206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024360204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4e1511c31173674ab6a93cd1904aaa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minigameFinished: 0
 --- !u!1 &2040532185
 GameObject:
   m_ObjectHideFlags: 0

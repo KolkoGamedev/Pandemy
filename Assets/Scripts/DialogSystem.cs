@@ -13,6 +13,7 @@ public class DialogSystem : MonoBehaviour
     [SerializeField] private TMP_Text dialogTextField = null;
     
     [SerializeField] private DialogChoices dialogChoices = null;
+    [SerializeField] private MinigamesManager _minigamesManager = null;
     
     [Header("DIALOG")]
     [SerializeField] private List<DialogScene> scenariusz = new List<DialogScene>();
@@ -75,8 +76,18 @@ public class DialogSystem : MonoBehaviour
         while (_sceneId != "end")
         {
             yield return new WaitUntil(() => _tw.canWrite);
-
             currentScene = FindSceneById(_sceneId);
+            if (_sceneId[0] == 'm')
+            {
+                _minigamesManager.SetupMinigame(currentScene);
+
+                yield return new WaitUntil(() => _minigamesManager.minigameFinished);
+                Debug.Log("Minigame Finished");
+                currentScene = FindSceneById(currentScene.nextSceneId);
+            }
+            
+            
+            
             if (currentScene.textAuthor != "" && currentScene.text != "")
             {
                 _tw.TypewriteSentence(currentScene, currentScene.textAuthor);
@@ -94,6 +105,7 @@ public class DialogSystem : MonoBehaviour
 
                 currentScene.nextSceneId = dialogChoices.currentChoice.wybor.destinationId;
             }
+
             _sceneId = currentScene.nextSceneId;
         }
     }
@@ -113,6 +125,7 @@ public class DialogScene
     public string msgAfterScene;
     public UnityEvent OnSceneFinished;
     public AudioClip soundEvent;
+    public GameObject minigame;
 
     public DialogScene(string text, TMP_Text textField, float delay)
     {
