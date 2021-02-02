@@ -14,7 +14,7 @@ public class DialogSystem : MonoBehaviour
     
     [SerializeField] private DialogChoices dialogChoices = null;
     [SerializeField] private MinigamesManager _minigamesManager = null;
-    
+    [SerializeField] private PostWrittenEvents _events = null;
     [Header("DIALOG")]
     [SerializeField] private List<DialogScene> scenariusz = new List<DialogScene>();
 
@@ -22,15 +22,24 @@ public class DialogSystem : MonoBehaviour
     public static event Action<DialogScene> OnDialogSkipped = delegate {  };
     private FogManager _fogManager;
     private TypeWriter _tw;
-    private string _sceneId = "0_0";
+    private string _sceneId = "0_70";
     private DialogScene currentScene;
-    private bool loaded = false;
+    private bool gameIsLoaded = true;
     private void Awake()
     {
         _tw = FindObjectOfType<TypeWriter>();
         LevelManager.GameStarted += StartGame;
-        loaded = false;
-        
+
+    }
+
+    private void Start()
+    {
+        if (gameIsLoaded)
+        {
+            _events.SwitchTv();
+            
+        }
+            
     }
 
     public DialogScene FindSceneById(string id)

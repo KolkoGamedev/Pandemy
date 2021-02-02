@@ -3416,7 +3416,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -13}
   m_SizeDelta: {x: 1000, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1539198106
@@ -4159,6 +4159,7 @@ MonoBehaviour:
   dialogTextField: {fileID: 1187839866}
   dialogChoices: {fileID: 2114649710}
   _minigamesManager: {fileID: 2024360206}
+  _events: {fileID: 286181337}
   scenariusz:
   - sceneId: 0_0
     currentTextField: {fileID: 998780045}
@@ -5384,7 +5385,7 @@ MonoBehaviour:
     textAuthor: 
     text: "Po przespanej nocy, postanawiacie wyruszy\u0107. Bierzecie prowiant na
       drog\u0119 i wychodzicie z domu."
-    afterTextDelay: 2
+    afterTextDelay: 3
     nextSceneId: m1_0
     wasSkipped: 0
     overrideDialog: 1
